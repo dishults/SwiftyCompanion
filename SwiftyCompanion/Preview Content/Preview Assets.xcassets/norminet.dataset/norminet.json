@@ -1,0 +1,322 @@
+{
+    "id": 24434,
+    "email": "norminet@42.fr",
+    "login": "norminet",
+    "first_name": "Norminet",
+    "last_name": "The cat",
+    "usual_first_name": null,
+    "url": "https://api.intra.42.fr/v2/users/norminet",
+    "phone": "hidden",
+    "displayname": "Norminet The Cat",
+    "usual_full_name": "Norminet The Cat",
+    "image_url": "https://cdn.intra.42.fr/users/norminet.jpg",
+    "staff?": true,
+    "correction_point": 5,
+    "pool_month": null,
+    "pool_year": null,
+    "location": null,
+    "wallet": 35,
+    "anonymize_date": "2021-09-09T00:00:00.000+02:00",
+    "groups": [
+        {
+            "id": 1,
+            "name": "staff"
+        }
+    ],
+    "cursus_users": [
+        {
+            "grade": "Cadet",
+            "level": 0.0,
+            "skills": [],
+            "blackholed_at": null,
+            "id": 18056,
+            "begin_at": "2017-03-02T16:01:14.196Z",
+            "end_at": "2020-07-15T08:01:42.081Z",
+            "cursus_id": 1,
+            "has_coalition": true,
+            "user": {
+                "id": 24434,
+                "login": "norminet",
+                "url": "https://api.intra.42.fr/v2/users/norminet"
+            },
+            "cursus": {
+                "id": 1,
+                "created_at": "2014-11-02T16:43:38.480Z",
+                "name": "42",
+                "slug": "42"
+            }
+        }
+    ],
+    "projects_users": [
+        {
+            "id": 1321925,
+            "occurrence": 0,
+            "final_mark": null,
+            "status": "finished",
+            "validated?": null,
+            "current_team_id": 2510202,
+            "project": {
+                "id": 411,
+                "name": "Electronics",
+                "slug": "electronics",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                1
+            ],
+            "marked_at": null,
+            "marked": false,
+            "retriable_at": "2019-07-09T08:03:48.264Z"
+        },
+        {
+            "id": 1322013,
+            "occurrence": 0,
+            "final_mark": null,
+            "status": "searching_a_group",
+            "validated?": null,
+            "current_team_id": null,
+            "project": {
+                "id": 666,
+                "name": "Electronics Project",
+                "slug": "electronics-electronics-project",
+                "parent_id": 411
+            },
+            "cursus_ids": [
+                1
+            ],
+            "marked_at": null,
+            "marked": false,
+            "retriable_at": null
+        }
+    ],
+    "languages_users": [
+        {
+            "id": 37610,
+            "language_id": 1,
+            "user_id": 24434,
+            "position": 1,
+            "created_at": "2017-03-02T16:01:14.297Z"
+        }
+    ],
+    "achievements": [
+        {
+            "id": 116,
+            "name": "1.21 Gigawatts ?!",
+            "description": "Participer au Time Capsule et se laisser un petit mot.",
+            "tier": "easy",
+            "kind": "social",
+            "visible": true,
+            "image": "/uploads/achievement/image/116/SOC014.svg",
+            "nbr_of_success": null,
+            "users_url": "https://api.intra.42.fr/v2/achievements/116/users"
+        },
+        {
+            "id": 107,
+            "name": "And now my watch begins",
+            "description": "Rejoindre les tuteurs.",
+            "tier": "none",
+            "kind": "scolarity",
+            "visible": true,
+            "image": "/uploads/achievement/image/107/SCO0017.svg",
+            "nbr_of_success": null,
+            "users_url": "https://api.intra.42.fr/v2/achievements/107/users"
+        },
+        {
+            "id": 54,
+            "name": "Attendee",
+            "description": "Assister à une conférence.",
+            "tier": "none",
+            "kind": "scolarity",
+            "visible": true,
+            "image": "/uploads/achievement/image/54/SCO003.svg",
+            "nbr_of_success": 1,
+            "users_url": "https://api.intra.42.fr/v2/achievements/54/users"
+        },
+        {
+            "id": 55,
+            "name": "Attendee",
+            "description": "Assister à 3 conférences.",
+            "tier": "none",
+            "kind": "scolarity",
+            "visible": true,
+            "image": "/uploads/achievement/image/55/SCO003.svg",
+            "nbr_of_success": 3,
+            "users_url": "https://api.intra.42.fr/v2/achievements/55/users"
+        },
+        {
+            "id": 63,
+            "name": "Crowd pleaser",
+            "description": "Etre élu du megatron.",
+            "tier": "none",
+            "kind": "social",
+            "visible": true,
+            "image": "/uploads/achievement/image/63/SOC012.svg",
+            "nbr_of_success": null,
+            "users_url": "https://api.intra.42.fr/v2/achievements/63/users"
+        },
+        {
+            "id": 44,
+            "name": "Curious wanderer",
+            "description": "S'être logué une fois dans chaque cluster.",
+            "tier": "none",
+            "kind": "scolarity",
+            "visible": false,
+            "image": "/uploads/achievement/image/44/SCO002.svg",
+            "nbr_of_success": null,
+            "users_url": "https://api.intra.42.fr/v2/achievements/44/users"
+        },
+        {
+            "id": 82,
+            "name": "I have no idea what I'm doing",
+            "description": "Faire une soutenance sans avoir validé le projet.",
+            "tier": "none",
+            "kind": "pedagogy",
+            "visible": true,
+            "image": "/uploads/achievement/image/82/PED011.svg",
+            "nbr_of_success": null,
+            "users_url": "https://api.intra.42.fr/v2/achievements/82/users"
+        },
+        {
+            "id": 109,
+            "name": "I’ll make him an offer he can’t refuse",
+            "description": "Participer au programme de parrainage en tant que parrain.",
+            "tier": "none",
+            "kind": "pedagogy",
+            "visible": true,
+            "image": "/uploads/achievement/image/109/PED014.svg",
+            "nbr_of_success": null,
+            "users_url": "https://api.intra.42.fr/v2/achievements/109/users"
+        },
+        {
+            "id": 87,
+            "name": "I post, therefore I am",
+            "description": "Poster 1 message sur le forum.",
+            "tier": "none",
+            "kind": "social",
+            "visible": false,
+            "image": "/uploads/achievement/image/87/SOC005.svg",
+            "nbr_of_success": 1,
+            "users_url": "https://api.intra.42.fr/v2/achievements/87/users"
+        },
+        {
+            "id": 155,
+            "name": "Je voudrais un croissant",
+            "description": "Visiter le campus de Paris",
+            "tier": "none",
+            "kind": "scolarity",
+            "visible": true,
+            "image": "/uploads/achievement/image/155/BADGE_SCOLARITY_paris.svg",
+            "nbr_of_success": null,
+            "users_url": "https://api.intra.42.fr/v2/achievements/155/users"
+        },
+        {
+            "id": 88,
+            "name": "Love me, I'm famous",
+            "description": "Avoir été upvoté 1 fois sur le forum.",
+            "tier": "none",
+            "kind": "social",
+            "visible": true,
+            "image": "/uploads/achievement/image/88/SOC006.svg",
+            "nbr_of_success": 1,
+            "users_url": "https://api.intra.42.fr/v2/achievements/88/users"
+        },
+        {
+            "id": 94,
+            "name": "Love me, I'm famous",
+            "description": "Avoir été upvoté 10 fois sur le forum.",
+            "tier": "none",
+            "kind": "social",
+            "visible": true,
+            "image": "/uploads/achievement/image/94/SOC006.svg",
+            "nbr_of_success": 10,
+            "users_url": "https://api.intra.42.fr/v2/achievements/94/users"
+        },
+        {
+            "id": 95,
+            "name": "Love me, I'm famous",
+            "description": "Avoir été upvoté 42 fois sur le forum. Ne seront comptés que 25 upvotes par personne au maximum.",
+            "tier": "none",
+            "kind": "social",
+            "visible": false,
+            "image": "/uploads/achievement/image/95/SOC006.svg",
+            "nbr_of_success": 42,
+            "users_url": "https://api.intra.42.fr/v2/achievements/95/users"
+        },
+        {
+            "id": 96,
+            "name": "Love me, I'm famous",
+            "description": "Avoir été upvoté 100 fois sur le forum. Ne seront comptés que 25 upvotes par personne au maximum.",
+            "tier": "none",
+            "kind": "social",
+            "visible": false,
+            "image": "/uploads/achievement/image/96/SOC006.svg",
+            "nbr_of_success": 100,
+            "users_url": "https://api.intra.42.fr/v2/achievements/96/users"
+        },
+        {
+            "id": 1,
+            "name": "Welcome, Cadet !",
+            "description": "Tu as réussi ta piscine C. Bienvenue à 42 !",
+            "tier": "none",
+            "kind": "project",
+            "visible": true,
+            "image": "/uploads/achievement/image/1/PRO001.svg",
+            "nbr_of_success": null,
+            "users_url": "https://api.intra.42.fr/v2/achievements/1/users"
+        }
+    ],
+    "titles": [],
+    "titles_users": [],
+    "partnerships": [],
+    "patroned": [],
+    "patroning": [
+        {
+            "id": 971,
+            "user_id": 39491,
+            "godfather_id": 24434,
+            "ongoing": true,
+            "created_at": "2018-07-26T18:51:19.219Z",
+            "updated_at": "2020-10-28T06:11:33.719Z"
+        }
+    ],
+    "expertises_users": [],
+    "roles": [
+        {
+            "id": 7,
+            "name": "Basic Staff"
+        }
+    ],
+    "campus": [
+        {
+            "id": 1,
+            "name": "Paris",
+            "time_zone": "Europe/Paris",
+            "language": {
+                "id": 1,
+                "name": "Français",
+                "identifier": "fr",
+                "created_at": "2014-11-02T16:43:38.466Z",
+                "updated_at": "2021-02-18T11:37:44.378Z"
+            },
+            "users_count": 21114,
+            "vogsphere_id": 1,
+            "country": "France",
+            "address": "96, boulevard Bessières",
+            "zip": "75017",
+            "city": "Paris",
+            "website": "http://www.42.fr/",
+            "facebook": "https://facebook.com/42born2code",
+            "twitter": "https://twitter.com/42born2code",
+            "active": true,
+            "email_extension": "42.fr"
+        }
+    ],
+    "campus_users": [
+        {
+            "id": 14376,
+            "user_id": 24434,
+            "campus_id": 1,
+            "is_primary": true
+        }
+    ]
+}

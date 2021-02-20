@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		329EF2E525DFE7A300A7369E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329EF2E425DFE7A300A7369E /* User.swift */; };
 		32DC6AB225DAE37300877D6D /* SwiftyCompanionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC6AB125DAE37300877D6D /* SwiftyCompanionApp.swift */; };
-		32DC6AB425DAE37300877D6D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC6AB325DAE37300877D6D /* ContentView.swift */; };
+		32DC6AB425DAE37300877D6D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC6AB325DAE37300877D6D /* LoginView.swift */; };
 		32DC6AB625DAE37400877D6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32DC6AB525DAE37400877D6D /* Assets.xcassets */; };
 		32DC6AB925DAE37400877D6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32DC6AB825DAE37400877D6D /* Preview Assets.xcassets */; };
+		32DC6AC425DAE8E300877D6D /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC6AC325DAE8E300877D6D /* InformationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		329EF2E425DFE7A300A7369E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		32DC6AAE25DAE37300877D6D /* SwiftyCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32DC6AB125DAE37300877D6D /* SwiftyCompanionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyCompanionApp.swift; sourceTree = "<group>"; };
-		32DC6AB325DAE37300877D6D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		32DC6AB325DAE37300877D6D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		32DC6AB525DAE37400877D6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32DC6AB825DAE37400877D6D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		32DC6ABA25DAE37400877D6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32DC6AC325DAE8E300877D6D /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		329EF2E325DFE79200A7369E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				329EF2E425DFE7A300A7369E /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		32DC6AA525DAE37300877D6D = {
 			isa = PBXGroup;
 			children = (
@@ -53,9 +65,11 @@
 			isa = PBXGroup;
 			children = (
 				32DC6AB125DAE37300877D6D /* SwiftyCompanionApp.swift */,
-				32DC6AB325DAE37300877D6D /* ContentView.swift */,
+				32DC6AB325DAE37300877D6D /* LoginView.swift */,
+				32DC6AC325DAE8E300877D6D /* InformationView.swift */,
 				32DC6AB525DAE37400877D6D /* Assets.xcassets */,
 				32DC6ABA25DAE37400877D6D /* Info.plist */,
+				329EF2E325DFE79200A7369E /* Models */,
 				32DC6AB725DAE37400877D6D /* Preview Content */,
 			);
 			path = SwiftyCompanion;
@@ -138,7 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32DC6AB425DAE37300877D6D /* ContentView.swift in Sources */,
+				329EF2E525DFE7A300A7369E /* User.swift in Sources */,
+				32DC6AC425DAE8E300877D6D /* InformationView.swift in Sources */,
+				32DC6AB425DAE37300877D6D /* LoginView.swift in Sources */,
 				32DC6AB225DAE37300877D6D /* SwiftyCompanionApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
