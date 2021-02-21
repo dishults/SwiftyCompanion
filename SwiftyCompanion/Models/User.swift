@@ -7,19 +7,44 @@
 
 import SwiftUI
 
-class User {
-    var login: String = ""
-    var profilePicture: Image = Image(systemName: "moon")
-    var email: String = ""
-    var level: Float = 0.0
-    var campus = ["city": "", "country": ""]
+struct User: Codable {
+    
+    let login, email: String?
+    var image_url: String?
+    let cursus_users: [Cursus]?
+    let campus: [Campus]?
+    
+    func getImage() -> Image? {
+        guard let pathString = Bundle.main.path(forResource: self.login!, ofType: "jpg") else {
+            fatalError("login.jpg not found")
+        }
+        return Image(uiImage: UIImage(named: pathString)!)
+    }
+}
 
-    init(login: String) {
-        self.login = login
-        (self.profilePicture, self.email, self.level, self.campus) = getUser(login: login)
+struct Cursus: Codable {
+    let level: Float?
+}
+
+struct Campus: Codable {
+    let city, country: String?
+}
+
+
+func getUser(login: String) -> User {
+    guard let pathString = Bundle.main.path(forResource: login, ofType: "json") else {
+        fatalError("login.json not found")
+    }
+    guard let jsonString = try? String(contentsOfFile: pathString, encoding: .utf8) else {
+        fatalError("Unable to convert login.json to String")
     }
 
-    func getUser(login: String) -> (profilePicture: Image, email: String, level: Float, location: [String: String]) {
-        return (Image(login), "\(login)@students.42.fr", 12.21, ["city": "Paris", "country": "France"])
+    guard let jsonData = jsonString.data(using: .utf8) else {
+        fatalError("Unable to convert login.json to Data")
     }
+
+    guard let jsonDictionary = try? JSONDecoder().decode(User.self, from: jsonData) else {
+        fatalError("Unable to convert login.json to JSON dictionary")
+    }
+    return jsonDictionary
 }

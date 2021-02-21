@@ -8,29 +8,29 @@
 import SwiftUI
 
 struct InformationView: View {
-    @Binding var login: String
+    let login: String
     
     var body: some View {
-        let user = User(login: login)
+        let user = getUser(login: login)
         List {
-            user.profilePicture
+            user.getImage()?
                 .resizable()
                 .scaledToFill()
             Section(header: Text("Details")) {
                 HStack {
                     Label("Email", systemImage: "envelope")
                     Spacer()
-                    Text(user.email)
+                    Text(user.email!)
                 }
                 HStack {
                     Label("Level", systemImage: "42.circle")
                     Spacer()
-                    Text(String(user.level))
+                    Text(String(user.cursus_users![0].level!))
                 }
                 HStack {
                     Label("Location", systemImage: "mappin")
                     Spacer()
-                    Text("\(user.campus["city"]!)/\(user.campus["country"]!)")
+                    Text("\(user.campus![0].city!)/\(user.campus![0].country!)")
                 }
             }
         }
@@ -41,6 +41,6 @@ struct InformationView: View {
 
 struct InformationView_Previews: PreviewProvider {
     static var previews: some View {
-        InformationView(login: .constant("norminet"))
+        InformationView(login: "norminet")
     }
 }

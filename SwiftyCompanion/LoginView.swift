@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State private var login = ""
-    @State private var isPresented = false
+    @State private var login: String = ""
+
     var body: some View {
         NavigationView {
                 VStack {
@@ -18,7 +18,7 @@ struct LoginView: View {
                     HStack {
                         TextField("Login", text: $login)
                             .autocapitalization(.none)
-                        NavigationLink(destination: InformationView(login: $login)) {
+                        NavigationLink(destination: InformationView(login: login)) {
                             Image(systemName: "magnifyingglass")
                                 .accessibilityLabel(Text("Search 42 student by login"))
                     }
