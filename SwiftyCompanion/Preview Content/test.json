@@ -1,0 +1,355 @@
+{
+    "id": 82617,
+    "email": "test@student.42.fr",
+    "login": "test",
+    "first_name": "Tata",
+    "last_name": "Est",
+    "usual_first_name": null,
+    "url": "https://api.intra.42.fr/v2/users/test",
+    "phone": "hidden",
+    "displayname": "Tata Est",
+    "usual_full_name": "Tata Est",
+    "image_url": "https://cdn.intra.42.fr/users/test.jpeg",
+    "staff?": false,
+    "correction_point": 5,
+    "pool_month": "september",
+    "pool_year": "2020",
+    "location": null,
+    "wallet": 10,
+    "anonymize_date": "2022-02-17T00:00:00.000+01:00",
+    "groups": [],
+    "cursus_users": [
+        {
+            "grade": null,
+            "level": 0.0,
+            "skills": [],
+            "blackholed_at": null,
+            "id": 110000,
+            "begin_at": "2021-01-21T15:03:04.380Z",
+            "end_at": null,
+            "cursus_id": 9,
+            "has_coalition": true,
+            "user": {
+                "id": 82617,
+                "login": "test",
+                "url": "https://api.intra.42.fr/v2/users/test"
+            },
+            "cursus": {
+                "id": 9,
+                "created_at": "2015-11-04T10:58:13.979Z",
+                "name": "C Piscine",
+                "slug": "c-piscine"
+            }
+        },
+        {
+            "grade": "Learner",
+            "level": 2.51,
+            "skills": [
+                {
+                    "id": 10,
+                    "name": "Network \u0026 system administration",
+                    "level": 3.35
+                },
+                {
+                    "id": 6,
+                    "name": "Web",
+                    "level": 2.14
+                },
+                {
+                    "id": 12,
+                    "name": "DB \u0026 Data",
+                    "level": 2.14
+                }
+            ],
+            "blackholed_at": "2021-09-23T09:20:00.000Z",
+            "id": 108447,
+            "begin_at": "2020-12-22T10:20:00.000Z",
+            "end_at": null,
+            "cursus_id": 21,
+            "has_coalition": true,
+            "user": {
+                "id": 82617,
+                "login": "test",
+                "url": "https://api.intra.42.fr/v2/users/test"
+            },
+            "cursus": {
+                "id": 21,
+                "created_at": "2019-07-29T08:45:17.896Z",
+                "name": "42cursus",
+                "slug": "42cursus"
+            }
+        }
+    ],
+    "projects_users": [
+        {
+            "id": 2074022,
+            "occurrence": 1,
+            "final_mark": 0,
+            "status": "in_progress",
+            "validated?": false,
+            "current_team_id": 3440842,
+            "project": {
+                "id": 1320,
+                "name": "Exam Rank 02",
+                "slug": "exam-rank-02",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                21
+            ],
+            "marked_at": "2021-01-28T15:30:10.839Z",
+            "marked": true,
+            "retriable_at": "2021-01-28T15:30:10.873Z"
+        },
+        {
+            "id": 2077415,
+            "occurrence": 0,
+            "final_mark": null,
+            "status": "in_progress",
+            "validated?": null,
+            "current_team_id": 3436720,
+            "project": {
+                "id": 1256,
+                "name": "C Piscine Shell 01",
+                "slug": "c-piscine-shell-01",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                9
+            ],
+            "marked_at": null,
+            "marked": false,
+            "retriable_at": null
+        },
+        {
+            "id": 2077349,
+            "occurrence": 0,
+            "final_mark": null,
+            "status": "in_progress",
+            "validated?": null,
+            "current_team_id": 3436625,
+            "project": {
+                "id": 1255,
+                "name": "C Piscine Shell 00",
+                "slug": "c-piscine-shell-00",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                9
+            ],
+            "marked_at": null,
+            "marked": false,
+            "retriable_at": null
+        },
+        {
+            "id": 2077317,
+            "occurrence": 0,
+            "final_mark": null,
+            "status": "in_progress",
+            "validated?": null,
+            "current_team_id": 3436582,
+            "project": {
+                "id": 1257,
+                "name": "C Piscine C 00",
+                "slug": "c-piscine-c-00",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                9
+            ],
+            "marked_at": null,
+            "marked": false,
+            "retriable_at": null
+        },
+        {
+            "id": 2061623,
+            "occurrence": 1,
+            "final_mark": 0,
+            "status": "in_progress",
+            "validated?": false,
+            "current_team_id": 3420239,
+            "project": {
+                "id": 1414,
+                "name": "cloud-1",
+                "slug": "42cursus-cloud-1",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                21
+            ],
+            "marked_at": "2021-01-05T16:08:36.541Z",
+            "marked": true,
+            "retriable_at": "2021-01-08T16:08:36.569Z"
+        },
+        {
+            "id": 2064308,
+            "occurrence": 0,
+            "final_mark": null,
+            "status": "searching_a_group",
+            "validated?": null,
+            "current_team_id": null,
+            "project": {
+                "id": 1314,
+                "name": "Libft",
+                "slug": "42cursus-libft",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                21
+            ],
+            "marked_at": null,
+            "marked": false,
+            "retriable_at": null
+        }
+    ],
+    "languages_users": [
+        {
+            "id": 327920,
+            "language_id": 1,
+            "user_id": 82617,
+            "position": 1,
+            "created_at": "2020-12-22T09:28:48.397Z"
+        }
+    ],
+    "achievements": [
+        {
+            "id": 41,
+            "name": "All work and no play makes Jack a dull boy",
+            "description": "Etre logué 90h sur une semaine. ",
+            "tier": "easy",
+            "kind": "scolarity",
+            "visible": true,
+            "image": "/uploads/achievement/image/41/SCO001.svg",
+            "nbr_of_success": null,
+            "users_url": "https://api.intra.42.fr/v2/achievements/41/users"
+        },
+        {
+            "id": 17,
+            "name": "Bonus Hunter",
+            "description": "Valider 1 projet avec la note maximum.",
+            "tier": "easy",
+            "kind": "project",
+            "visible": false,
+            "image": "/uploads/achievement/image/17/PRO005.svg",
+            "nbr_of_success": 1,
+            "users_url": "https://api.intra.42.fr/v2/achievements/17/users"
+        },
+        {
+            "id": 4,
+            "name": "Code Explorer",
+            "description": "Valider son premier projet.",
+            "tier": "none",
+            "kind": "project",
+            "visible": true,
+            "image": "/uploads/achievement/image/4/PRO002.svg",
+            "nbr_of_success": 1,
+            "users_url": "https://api.intra.42.fr/v2/achievements/4/users"
+        },
+        {
+            "id": 44,
+            "name": "Curious wanderer",
+            "description": "S'être logué une fois dans chaque cluster.",
+            "tier": "none",
+            "kind": "scolarity",
+            "visible": false,
+            "image": "/uploads/achievement/image/44/SCO002.svg",
+            "nbr_of_success": null,
+            "users_url": "https://api.intra.42.fr/v2/achievements/44/users"
+        },
+        {
+            "id": 45,
+            "name": "Home is where the code is",
+            "description": "S'être logué dans le même cluster un mois de suite.",
+            "tier": "none",
+            "kind": "scolarity",
+            "visible": true,
+            "image": "/uploads/achievement/image/45/SCO002.svg",
+            "nbr_of_success": null,
+            "users_url": "https://api.intra.42.fr/v2/achievements/45/users"
+        },
+        {
+            "id": 155,
+            "name": "Je voudrais un croissant",
+            "description": "Visiter le campus de Paris",
+            "tier": "none",
+            "kind": "scolarity",
+            "visible": true,
+            "image": "/uploads/achievement/image/155/BADGE_SCOLARITY_paris.svg",
+            "nbr_of_success": null,
+            "users_url": "https://api.intra.42.fr/v2/achievements/155/users"
+        },
+        {
+            "id": 12,
+            "name": "Perfectionnist",
+            "description": "Valider et refaire 1 projet.",
+            "tier": "none",
+            "kind": "project",
+            "visible": true,
+            "image": "/uploads/achievement/image/12/PRO004.svg",
+            "nbr_of_success": 1,
+            "users_url": "https://api.intra.42.fr/v2/achievements/12/users"
+        },
+        {
+            "id": 1,
+            "name": "Welcome, Cadet !",
+            "description": "Tu as réussi ta piscine C. Bienvenue à 42 !",
+            "tier": "none",
+            "kind": "project",
+            "visible": true,
+            "image": "/uploads/achievement/image/1/PRO001.svg",
+            "nbr_of_success": null,
+            "users_url": "https://api.intra.42.fr/v2/achievements/1/users"
+        },
+        {
+            "id": 218,
+            "name": "Welcome, Learner!",
+            "description": "Tu as réussi ta piscine C. Bienvenue à 42 !",
+            "tier": "none",
+            "kind": "project",
+            "visible": true,
+            "image": "/uploads/achievement/image/218/PRO001-2.svg",
+            "nbr_of_success": null,
+            "users_url": "https://api.intra.42.fr/v2/achievements/218/users"
+        }
+    ],
+    "titles": [],
+    "titles_users": [],
+    "partnerships": [],
+    "patroned": [],
+    "patroning": [],
+    "expertises_users": [],
+    "roles": [],
+    "campus": [
+        {
+            "id": 1,
+            "name": "Paris",
+            "time_zone": "Europe/Paris",
+            "language": {
+                "id": 1,
+                "name": "Français",
+                "identifier": "fr",
+                "created_at": "2014-11-02T16:43:38.466Z",
+                "updated_at": "2021-02-18T11:37:44.378Z"
+            },
+            "users_count": 21114,
+            "vogsphere_id": 1,
+            "country": "France",
+            "address": "96, boulevard Bessières",
+            "zip": "75017",
+            "city": "Paris",
+            "website": "http://www.42.fr/",
+            "facebook": "https://facebook.com/42born2code",
+            "twitter": "https://twitter.com/42born2code",
+            "active": true,
+            "email_extension": "42.fr"
+        }
+    ],
+    "campus_users": [
+        {
+            "id": 74378,
+            "user_id": 82617,
+            "campus_id": 1,
+            "is_primary": true
+        }
+    ]
+}

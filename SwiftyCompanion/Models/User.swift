@@ -9,42 +9,75 @@ import SwiftUI
 
 struct User: Codable {
     
-    let login, email: String?
-    var image_url: String?
-    let cursus_users: [Cursus]?
-    let campus: [Campus]?
+    let login, email: String
+    var image_url: String
+    let cursus_users: [CursusUser]
+    let campus: [Campus]
+    let projects_users: [ProjectsUser]
     
     func getImage() -> Image? {
-        guard let pathString = Bundle.main.path(forResource: self.login!, ofType: "jpg") else {
+        guard let pathString = Bundle.main.path(forResource: self.login, ofType: "jpg") else {
             fatalError("login.jpg not found")
         }
         return Image(uiImage: UIImage(named: pathString)!)
     }
 }
 
-struct Cursus: Codable {
-    let level: Float?
+struct CursusUser: Identifiable, Codable {
+    let id: Int
+    let level: Float
+    let skills: [Skills]
+    let cursus: Cursus
 }
 
 struct Campus: Codable {
-    let city, country: String?
+    let city, country: String
+}
+
+struct Skills: Identifiable, Codable {
+    var id: Int
+    let name: String
+    let level: Float
+}
+
+struct Cursus: Codable {
+    let name: String
+}
+
+struct ProjectsUser: Codable {
+    let final_mark: Int?
+    let status: String
+    let validated: Bool?
+    let project: Project
+
+    enum CodingKeys: String, CodingKey {
+        case final_mark
+        case status
+        case validated = "validated?"
+        case project
+    }
+}
+
+struct Project: Codable {
+    let name: String
 }
 
 
-func getUser(login: String) -> User {
+func getUser(login: String) -> User? {
+    //FIXME: Change to -> do catch
     guard let pathString = Bundle.main.path(forResource: login, ofType: "json") else {
-        fatalError("login.json not found")
+       return nil
     }
     guard let jsonString = try? String(contentsOfFile: pathString, encoding: .utf8) else {
-        fatalError("Unable to convert login.json to String")
+        return nil
     }
 
     guard let jsonData = jsonString.data(using: .utf8) else {
-        fatalError("Unable to convert login.json to Data")
+        return nil
     }
 
     guard let jsonDictionary = try? JSONDecoder().decode(User.self, from: jsonData) else {
-        fatalError("Unable to convert login.json to JSON dictionary")
+        return nil
     }
     return jsonDictionary
 }

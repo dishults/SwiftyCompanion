@@ -18,6 +18,7 @@ struct LoginView: View {
                     HStack {
                         TextField("Login", text: $login)
                             .autocapitalization(.none)
+                            .disableAutocorrection(true)
                         NavigationLink(destination: InformationView(login: login)) {
                             Image(systemName: "magnifyingglass")
                                 .accessibilityLabel(Text("Search 42 student by login"))

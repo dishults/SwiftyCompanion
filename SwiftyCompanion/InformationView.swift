@@ -11,36 +11,55 @@ struct InformationView: View {
     let login: String
     
     var body: some View {
-        let user = getUser(login: login)
-        List {
-            user.getImage()?
-                .resizable()
-                .scaledToFill()
-            Section(header: Text("Details")) {
-                HStack {
-                    Label("Email", systemImage: "envelope")
-                    Spacer()
-                    Text(user.email!)
+        if let user = getUser(login: login) {
+            List {
+                user.getImage()?
+                    .resizable()
+                    .scaledToFill()
+                Section(header: Text("Details")) {
+                    HStack {
+                        Label("Email", systemImage: "envelope")
+                        Spacer()
+                        Text(user.email)
+                    }
+                    HStack {
+                        Label("Level", systemImage: "42.circle")
+                        Spacer()
+                        Text(String(user.cursus_users[0].level))
+                    }
+                    HStack {
+                        Label("Location", systemImage: "mappin")
+                        Spacer()
+                        Text("\(user.campus[0].city)/\(user.campus[0].country)")
+                    }
                 }
-                HStack {
-                    Label("Level", systemImage: "42.circle")
-                    Spacer()
-                    Text(String(user.cursus_users![0].level!))
+                Section(header: Text("Skills")) {
+                    ForEach(user.cursus_users) { cursus_user in
+                        if !cursus_user.skills.isEmpty {
+                            ForEach(cursus_user.skills) { skill in
+                                HStack {
+                                    Text(skill.name)
+                                    Spacer()
+                                    Text(String(skill.level))
+                                }
+                            }
+                        }
+                    }
                 }
-                HStack {
-                    Label("Location", systemImage: "mappin")
-                    Spacer()
-                    Text("\(user.campus![0].city!)/\(user.campus![0].country!)")
-                }
+                //TODO: projects user has done even if he has failed them
             }
+            .listStyle(InsetGroupedListStyle())
+            .navigationBarTitle(Text(login))
+        } else {
+            Text("No such user, try another one.")
         }
-        .listStyle(InsetGroupedListStyle())
-        .navigationBarTitle(Text(login))
     }
 }
 
 struct InformationView_Previews: PreviewProvider {
     static var previews: some View {
         InformationView(login: "norminet")
+        InformationView(login: "test")
+        InformationView(login: "nonuser")
     }
 }
