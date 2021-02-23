@@ -39,18 +39,24 @@ struct Skills: Identifiable, Codable {
     let name: String
     let level: Float
 }
-
+/*
+ "id": 27262,
+ "id": 21310,
+ "id": 83610,
+ */
 struct Cursus: Codable {
     let name: String
 }
 
-struct ProjectsUser: Codable {
+struct ProjectsUser: Identifiable, Codable {
+    let id: Int
     let final_mark: Int?
     let status: String
     let validated: Bool?
     let project: Project
 
     enum CodingKeys: String, CodingKey {
+        case id
         case final_mark
         case status
         case validated = "validated?"

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		32057BE125E2BDC900F4B61D /* OAuth2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32057BE025E2BDC900F4B61D /* OAuth2.swift */; };
+		3262D6BD25E56D87001212C8 /* dshults.json in Resources */ = {isa = PBXBuildFile; fileRef = 3262D6BB25E56D87001212C8 /* dshults.json */; };
+		3262D6BE25E56D87001212C8 /* dshults.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3262D6BC25E56D87001212C8 /* dshults.jpg */; };
 		327B855125E420310056598D /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 327B854F25E420310056598D /* test.json */; };
 		327B855225E420310056598D /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 327B855025E420310056598D /* test.jpg */; };
 		329EF2E525DFE7A300A7369E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329EF2E425DFE7A300A7369E /* User.swift */; };
@@ -22,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		32057BE025E2BDC900F4B61D /* OAuth2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth2.swift; sourceTree = "<group>"; };
+		3262D6BB25E56D87001212C8 /* dshults.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dshults.json; sourceTree = "<group>"; };
+		3262D6BC25E56D87001212C8 /* dshults.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dshults.jpg; sourceTree = "<group>"; };
 		327B854F25E420310056598D /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
 		327B855025E420310056598D /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
 		329EF2E425DFE7A300A7369E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -89,6 +93,8 @@
 		32DC6AB725DAE37400877D6D /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				3262D6BC25E56D87001212C8 /* dshults.jpg */,
+				3262D6BB25E56D87001212C8 /* dshults.json */,
 				327B855025E420310056598D /* test.jpg */,
 				327B854F25E420310056598D /* test.json */,
 				32EF3E6325E29DEB00582DDE /* norminet.jpg */,
@@ -156,10 +162,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				32DC6AB925DAE37400877D6D /* Preview Assets.xcassets in Resources */,
+				3262D6BE25E56D87001212C8 /* dshults.jpg in Resources */,
 				327B855225E420310056598D /* test.jpg in Resources */,
 				32DC6AB625DAE37400877D6D /* Assets.xcassets in Resources */,
 				327B855125E420310056598D /* test.json in Resources */,
 				32EF3E6425E29DEB00582DDE /* norminet.json in Resources */,
+				3262D6BD25E56D87001212C8 /* dshults.json in Resources */,
 				32EF3E6525E29DEB00582DDE /* norminet.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

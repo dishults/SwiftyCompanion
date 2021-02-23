@@ -1,0 +1,1948 @@
+{
+    "email": "dshults@student.42.fr",
+    "login": "dshults",
+    "image_url": "https://cdn.intra.42.fr/users/dshults.jpg",
+    "cursus_users": [
+        {
+            "grade": "Commander",
+            "level": 11.37,
+            "skills": [
+                {
+                    "id": 16,
+                    "name": "Company experience",
+                    "level": 10.53
+                },
+                {
+                    "id": 1,
+                    "name": "Algorithms \u0026 AI",
+                    "level": 10.12
+                },
+                {
+                    "id": 7,
+                    "name": "Group \u0026 interpersonal",
+                    "level": 8.11
+                },
+                {
+                    "id": 2,
+                    "name": "Imperative programming",
+                    "level": 3.71
+                },
+                {
+                    "id": 3,
+                    "name": "Rigor",
+                    "level": 3.6
+                },
+                {
+                    "id": 4,
+                    "name": "Unix",
+                    "level": 2.71
+                },
+                {
+                    "id": 14,
+                    "name": "Adaptation \u0026 creativity",
+                    "level": 2.34
+                },
+                {
+                    "id": 10,
+                    "name": "Network \u0026 system administration",
+                    "level": 1.8
+                },
+                {
+                    "id": 13,
+                    "name": "Organization",
+                    "level": 1.24
+                },
+                {
+                    "id": 15,
+                    "name": "Technology integration",
+                    "level": 0.53
+                }
+            ],
+            "id": 27262,
+            "cursus": {
+                "id": 1,
+                "name": "42",
+                "slug": "42"
+            }
+        },
+        {
+            "grade": null,
+            "level": 6.51,
+            "skills": [
+                {
+                    "id": 1,
+                    "name": "Algorithms \u0026 AI",
+                    "level": 7.12
+                },
+                {
+                    "id": 3,
+                    "name": "Rigor",
+                    "level": 6.29
+                },
+                {
+                    "id": 4,
+                    "name": "Unix",
+                    "level": 6.1
+                }
+            ],
+            "id": 21310,
+            "cursus": {
+                "id": 6,
+                "name": "Piscine C décloisonnée",
+                "slug": "piscine-c-decloisonnee"
+            }
+        },
+        {
+            "grade": "Member",
+            "level": 13.25,
+            "skills": [
+                {
+                    "id": 1,
+                    "name": "Algorithms \u0026 AI",
+                    "level": 12.35
+                },
+                {
+                    "id": 16,
+                    "name": "Company experience",
+                    "level": 10.53
+                },
+                {
+                    "id": 7,
+                    "name": "Group \u0026 interpersonal",
+                    "level": 8.11
+                },
+                {
+                    "id": 3,
+                    "name": "Rigor",
+                    "level": 5.54
+                },
+                {
+                    "id": 2,
+                    "name": "Imperative programming",
+                    "level": 4.86
+                },
+                {
+                    "id": 14,
+                    "name": "Adaptation \u0026 creativity",
+                    "level": 4.66
+                },
+                {
+                    "id": 13,
+                    "name": "Organization",
+                    "level": 4.07
+                },
+                {
+                    "id": 4,
+                    "name": "Unix",
+                    "level": 4.05
+                },
+                {
+                    "id": 11,
+                    "name": "Security",
+                    "level": 3.82
+                },
+                {
+                    "id": 12,
+                    "name": "DB \u0026 Data",
+                    "level": 3.73
+                },
+                {
+                    "id": 10,
+                    "name": "Network \u0026 system administration",
+                    "level": 3.0
+                },
+                {
+                    "id": 17,
+                    "name": "Object-oriented programming",
+                    "level": 2.32
+                },
+                {
+                    "id": 6,
+                    "name": "Web",
+                    "level": 2.32
+                },
+                {
+                    "id": 15,
+                    "name": "Technology integration",
+                    "level": 1.92
+                }
+            ],
+            "id": 83610,
+            "cursus": {
+                "id": 21,
+                "name": "42cursus",
+                "slug": "42cursus"
+            }
+        }
+    ],
+    "projects_users": [
+        {
+            "id": 2092784,
+            "occurrence": 0,
+            "final_mark": null,
+            "status": "in_progress",
+            "validated?": null,
+            "current_team_id": 3455602,
+            "project": {
+                "id": 1395,
+                "name": "swifty-companion",
+                "slug": "42cursus-swifty-companion",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                21
+            ],
+            "marked_at": null,
+            "marked": false,
+            "retriable_at": null
+        },
+        {
+            "id": 1914997,
+            "occurrence": 0,
+            "final_mark": 125,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 3422110,
+            "project": {
+                "id": 1405,
+                "name": "darkly",
+                "slug": "42cursus-darkly",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                21
+            ],
+            "marked_at": "2021-02-10T10:32:15.986Z",
+            "marked": true,
+            "retriable_at": "2021-02-13T10:32:16.384Z"
+        },
+        {
+            "id": 2084644,
+            "occurrence": 0,
+            "final_mark": null,
+            "status": "waiting_for_correction",
+            "validated?": null,
+            "current_team_id": 3445590,
+            "project": {
+                "id": 1660,
+                "name": "Part_Time II - Company Final Evaluation",
+                "slug": "part_time-ii-part_time-ii-company-final-evaluation",
+                "parent_id": 1656
+            },
+            "cursus_ids": [
+                21
+            ],
+            "marked_at": null,
+            "marked": false,
+            "retriable_at": null
+        },
+        {
+            "id": 2084643,
+            "occurrence": 0,
+            "final_mark": null,
+            "status": "waiting_for_correction",
+            "validated?": null,
+            "current_team_id": 3445589,
+            "project": {
+                "id": 1659,
+                "name": "Part_Time II - Company Mid Evaluation",
+                "slug": "part_time-ii-part_time-ii-company-mid-evaluation",
+                "parent_id": 1656
+            },
+            "cursus_ids": [
+                21
+            ],
+            "marked_at": null,
+            "marked": false,
+            "retriable_at": null
+        },
+        {
+            "id": 2084642,
+            "occurrence": 0,
+            "final_mark": 125,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 3445588,
+            "project": {
+                "id": 1658,
+                "name": "Part_Time II - Duration",
+                "slug": "part_time-ii-part_time-ii-duration",
+                "parent_id": 1656
+            },
+            "cursus_ids": [
+                21
+            ],
+            "marked_at": "2021-02-02T16:27:59.039Z",
+            "marked": true,
+            "retriable_at": null
+        },
+        {
+            "id": 2084641,
+            "occurrence": 0,
+            "final_mark": 100,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 3445587,
+            "project": {
+                "id": 1657,
+                "name": "Part_Time II - Contract Upload",
+                "slug": "part_time-ii-part_time-ii-contract-upload",
+                "parent_id": 1656
+            },
+            "cursus_ids": [
+                21
+            ],
+            "marked_at": "2021-02-02T16:27:58.688Z",
+            "marked": true,
+            "retriable_at": null
+        },
+        {
+            "id": 2079749,
+            "occurrence": 0,
+            "final_mark": null,
+            "status": "in_progress",
+            "validated?": null,
+            "current_team_id": 3439524,
+            "project": {
+                "id": 1656,
+                "name": "Part_Time II",
+                "slug": "part_time-ii",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                21
+            ],
+            "marked_at": null,
+            "marked": false,
+            "retriable_at": null
+        },
+        {
+            "id": 2077395,
+            "occurrence": 0,
+            "final_mark": 0,
+            "status": "searching_a_group",
+            "validated?": false,
+            "current_team_id": null,
+            "project": {
+                "id": 1859,
+                "name": "Apprentissage 2 ans - 1ère année - mid evaluation",
+                "slug": "apprentissage-2-ans-1ere-annee-apprentissage-2-ans-1ere-annee-mid-evaluation",
+                "parent_id": 1857
+            },
+            "cursus_ids": [
+                21
+            ],
+            "marked_at": "2021-01-28T10:28:22.439Z",
+            "marked": true,
+            "retriable_at": null
+        },
+        {
+            "id": 2044006,
+            "occurrence": 0,
+            "final_mark": 0,
+            "status": "finished",
+            "validated?": false,
+            "current_team_id": 3389307,
+            "project": {
+                "id": 1857,
+                "name": "Apprentissage 2 ans - 1ère année",
+                "slug": "42cursus-apprentissage-2-ans-1ere-annee",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                21
+            ],
+            "marked_at": "2021-01-28T10:27:36.558Z",
+            "marked": true,
+            "retriable_at": "2021-01-28T10:27:06.517Z"
+        },
+        {
+            "id": 2077396,
+            "occurrence": 0,
+            "final_mark": 0,
+            "status": "searching_a_group",
+            "validated?": false,
+            "current_team_id": null,
+            "project": {
+                "id": 1860,
+                "name": "Apprentissage 2 ans - 1ère année - final evaluation",
+                "slug": "apprentissage-2-ans-1ere-annee-apprentissage-2-ans-1ere-annee-final-evaluation",
+                "parent_id": 1857
+            },
+            "cursus_ids": [
+                21
+            ],
+            "marked_at": "2021-01-28T10:28:03.667Z",
+            "marked": true,
+            "retriable_at": null
+        },
+        {
+            "id": 2078610,
+            "occurrence": 0,
+            "final_mark": 100,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 3438242,
+            "project": {
+                "id": 1862,
+                "name": "Apprentissage 2 ans - 1ère année - 2",
+                "slug": "apprentissage-2-ans-1ere-annee-apprentissage-2-ans-1ere-annee-2",
+                "parent_id": 1857
+            },
+            "cursus_ids": [
+                21
+            ],
+            "marked_at": "2021-01-26T21:12:14.239Z",
+            "marked": true,
+            "retriable_at": "2021-01-26T21:12:14.472Z"
+        },
+        {
+            "id": 2078607,
+            "occurrence": 0,
+            "final_mark": 100,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 3438238,
+            "project": {
+                "id": 1861,
+                "name": "Apprentissage 2 ans - 1ère année - 1",
+                "slug": "apprentissage-2-ans-1ere-annee-apprentissage-2-ans-1ere-annee-1",
+                "parent_id": 1857
+            },
+            "cursus_ids": [
+                21
+            ],
+            "marked_at": "2021-01-26T21:02:22.384Z",
+            "marked": true,
+            "retriable_at": "2021-01-26T21:02:22.642Z"
+        },
+        {
+            "id": 2077394,
+            "occurrence": 0,
+            "final_mark": 100,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 3436694,
+            "project": {
+                "id": 1858,
+                "name": "Contract Upload",
+                "slug": "apprentissage-2-ans-1ere-annee-contract-upload",
+                "parent_id": 1857
+            },
+            "cursus_ids": [
+                21
+            ],
+            "marked_at": "2021-01-25T14:02:40.061Z",
+            "marked": true,
+            "retriable_at": "2021-01-25T14:02:40.106Z"
+        },
+        {
+            "id": 2029708,
+            "occurrence": 1,
+            "final_mark": 124,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 3415367,
+            "project": {
+                "id": 1433,
+                "name": "computorv2",
+                "slug": "42cursus-computorv2",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                21
+            ],
+            "marked_at": "2021-01-02T18:12:59.351Z",
+            "marked": true,
+            "retriable_at": "2021-01-05T18:12:59.715Z"
+        },
+        {
+            "id": 2000183,
+            "occurrence": 0,
+            "final_mark": 104,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 3327204,
+            "project": {
+                "id": 1382,
+                "name": "computorv1",
+                "slug": "42cursus-computorv1",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                21
+            ],
+            "marked_at": "2020-11-06T10:38:43.423Z",
+            "marked": true,
+            "retriable_at": "2020-11-09T10:38:43.652Z"
+        },
+        {
+            "id": 2022345,
+            "occurrence": 0,
+            "final_mark": null,
+            "status": "searching_a_group",
+            "validated?": null,
+            "current_team_id": null,
+            "project": {
+                "id": 1428,
+                "name": "red-tetris",
+                "slug": "42cursus-red-tetris",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                21
+            ],
+            "marked_at": null,
+            "marked": false,
+            "retriable_at": null
+        },
+        {
+            "id": 1895654,
+            "occurrence": 1,
+            "final_mark": 121,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 3331500,
+            "project": {
+                "id": 1453,
+                "name": "dslr",
+                "slug": "42cursus-dslr",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                21
+            ],
+            "marked_at": "2020-10-12T13:09:09.582Z",
+            "marked": true,
+            "retriable_at": "2020-10-15T13:09:09.851Z"
+        },
+        {
+            "id": 1829012,
+            "occurrence": 0,
+            "final_mark": 114,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 3116986,
+            "project": {
+                "id": 1435,
+                "name": "avaj-launcher",
+                "slug": "42cursus-avaj-launcher",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                21
+            ],
+            "marked_at": "2020-06-30T13:15:49.790Z",
+            "marked": true,
+            "retriable_at": "2020-07-03T13:15:50.103Z"
+        },
+        {
+            "id": 1914999,
+            "occurrence": 0,
+            "final_mark": null,
+            "status": "searching_a_group",
+            "validated?": null,
+            "current_team_id": null,
+            "project": {
+                "id": 1414,
+                "name": "cloud-1",
+                "slug": "42cursus-cloud-1",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                21
+            ],
+            "marked_at": null,
+            "marked": false,
+            "retriable_at": null
+        },
+        {
+            "id": 1576137,
+            "occurrence": 0,
+            "final_mark": 100,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 2828689,
+            "project": {
+                "id": 121,
+                "name": "Peer Video",
+                "slug": "first-internship-peer-video",
+                "parent_id": 118
+            },
+            "cursus_ids": [
+                1
+            ],
+            "marked_at": "2019-10-25T11:38:30.305Z",
+            "marked": true,
+            "retriable_at": "2019-10-25T11:38:31.415Z"
+        },
+        {
+            "id": 1218723,
+            "occurrence": 0,
+            "final_mark": 60,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 2394467,
+            "project": {
+                "id": 1190,
+                "name": "roger-skyline-1",
+                "slug": "roger-skyline-1",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                1
+            ],
+            "marked_at": "2019-03-05T22:10:33.965Z",
+            "marked": true,
+            "retriable_at": "2019-03-08T22:10:34.719Z"
+        },
+        {
+            "id": 1181486,
+            "occurrence": 0,
+            "final_mark": 99,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 2352366,
+            "project": {
+                "id": 687,
+                "name": "init",
+                "slug": "init",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                1
+            ],
+            "marked_at": "2019-01-29T17:50:26.445Z",
+            "marked": true,
+            "retriable_at": "2019-01-30T17:50:27.389Z"
+        },
+        {
+            "id": 1169887,
+            "occurrence": 0,
+            "final_mark": 125,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 2351846,
+            "project": {
+                "id": 22,
+                "name": "Corewar",
+                "slug": "corewar",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                1
+            ],
+            "marked_at": "2018-12-18T22:22:58.032Z",
+            "marked": true,
+            "retriable_at": "2018-12-25T22:22:58.615Z"
+        },
+        {
+            "id": 870908,
+            "occurrence": 0,
+            "final_mark": 111,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 2011426,
+            "project": {
+                "id": 29,
+                "name": "Lem_in",
+                "slug": "lem_in",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                1
+            ],
+            "marked_at": "2018-10-02T16:14:18.220Z",
+            "marked": true,
+            "retriable_at": "2018-10-09T16:14:19.384Z"
+        },
+        {
+            "id": 838427,
+            "occurrence": 0,
+            "final_mark": 98,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1956780,
+            "project": {
+                "id": 26,
+                "name": "Filler",
+                "slug": "filler",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                1
+            ],
+            "marked_at": "2018-06-01T13:28:04.892Z",
+            "marked": true,
+            "retriable_at": "2018-06-05T13:28:04.867Z"
+        },
+        {
+            "id": 782039,
+            "occurrence": 0,
+            "final_mark": 82,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1888616,
+            "project": {
+                "id": 5,
+                "name": "ft_printf",
+                "slug": "ft_printf",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                1
+            ],
+            "marked_at": "2018-04-09T13:24:29.840Z",
+            "marked": true,
+            "retriable_at": "2018-04-13T13:24:29.823Z"
+        },
+        {
+            "id": 776832,
+            "occurrence": 2,
+            "final_mark": 124,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1886100,
+            "project": {
+                "id": 2,
+                "name": "GET_Next_Line",
+                "slug": "get_next_line",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                1
+            ],
+            "marked_at": "2018-02-05T14:23:47.470Z",
+            "marked": true,
+            "retriable_at": "2018-02-06T14:23:47.445Z"
+        },
+        {
+            "id": 754926,
+            "occurrence": 1,
+            "final_mark": 100,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1857231,
+            "project": {
+                "id": 540,
+                "name": "Fillit",
+                "slug": "fillit",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                1
+            ],
+            "marked_at": "2018-01-04T16:10:19.458Z",
+            "marked": true,
+            "retriable_at": "2018-01-06T16:10:19.442Z"
+        },
+        {
+            "id": 744407,
+            "occurrence": 0,
+            "final_mark": 100,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1842039,
+            "project": {
+                "id": 1,
+                "name": "Libft",
+                "slug": "libft",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                1
+            ],
+            "marked_at": "2017-11-18T16:57:19.460Z",
+            "marked": true,
+            "retriable_at": "2017-11-19T16:57:19.447Z"
+        },
+        {
+            "id": 741313,
+            "occurrence": 0,
+            "final_mark": 100,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1837219,
+            "project": {
+                "id": 756,
+                "name": "Piscine Reloaded",
+                "slug": "piscine-reloaded",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                1
+            ],
+            "marked_at": "2017-11-08T18:39:28.792Z",
+            "marked": true,
+            "retriable_at": "2017-11-08T18:39:28.767Z"
+        },
+        {
+            "id": 739558,
+            "occurrence": 2,
+            "final_mark": 100,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1834137,
+            "project": {
+                "id": 817,
+                "name": "42 Commandements",
+                "slug": "42-formation-pole-emploi-42-commandements",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                1
+            ],
+            "marked_at": "2017-11-06T18:45:59.399Z",
+            "marked": true,
+            "retriable_at": "2017-11-06T18:45:59.381Z"
+        },
+        {
+            "id": 540693,
+            "occurrence": 3,
+            "final_mark": 100,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1643371,
+            "project": {
+                "id": 157,
+                "name": "Day 03",
+                "slug": "piscine-c-day-03",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-07-27T10:51:25.174Z",
+            "marked": true,
+            "retriable_at": "2017-07-27T10:51:25.151Z"
+        },
+        {
+            "id": 571250,
+            "occurrence": 3,
+            "final_mark": 100,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1641288,
+            "project": {
+                "id": 163,
+                "name": "Day 10",
+                "slug": "piscine-c-day-10",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-07-26T13:26:09.448Z",
+            "marked": true,
+            "retriable_at": "2017-07-26T13:26:09.409Z"
+        },
+        {
+            "id": 567558,
+            "occurrence": 1,
+            "final_mark": 100,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1633173,
+            "project": {
+                "id": 162,
+                "name": "Day 08",
+                "slug": "piscine-c-day-08",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-07-22T16:36:01.465Z",
+            "marked": true,
+            "retriable_at": "2017-07-22T16:36:01.445Z"
+        },
+        {
+            "id": 566791,
+            "occurrence": 1,
+            "final_mark": 60,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1632945,
+            "project": {
+                "id": 161,
+                "name": "Day 07",
+                "slug": "piscine-c-day-07",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-07-22T12:24:17.207Z",
+            "marked": true,
+            "retriable_at": "2017-07-22T12:24:17.179Z"
+        },
+        {
+            "id": 563344,
+            "occurrence": 3,
+            "final_mark": 70,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1631537,
+            "project": {
+                "id": 159,
+                "name": "Day 05",
+                "slug": "piscine-c-day-05",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-07-20T17:11:10.207Z",
+            "marked": true,
+            "retriable_at": "2017-07-20T17:11:10.196Z"
+        },
+        {
+            "id": 563353,
+            "occurrence": 1,
+            "final_mark": 100,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1630053,
+            "project": {
+                "id": 160,
+                "name": "Day 06",
+                "slug": "piscine-c-day-06",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-07-19T16:35:46.306Z",
+            "marked": true,
+            "retriable_at": "2017-07-19T16:35:46.286Z"
+        },
+        {
+            "id": 530060,
+            "occurrence": 4,
+            "final_mark": 100,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1625065,
+            "project": {
+                "id": 154,
+                "name": "Day 00",
+                "slug": "piscine-c-day-00",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-07-16T12:37:35.028Z",
+            "marked": true,
+            "retriable_at": "2017-07-16T12:37:35.005Z"
+        },
+        {
+            "id": 543182,
+            "occurrence": 0,
+            "final_mark": 0,
+            "status": "finished",
+            "validated?": false,
+            "current_team_id": 1623371,
+            "project": {
+                "id": 169,
+                "name": "Rush 01",
+                "slug": "piscine-c-rush-01",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-07-20T14:47:10.468Z",
+            "marked": true,
+            "retriable_at": "2017-07-20T14:47:08.136Z"
+        },
+        {
+            "id": 543127,
+            "occurrence": 2,
+            "final_mark": 70,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1618578,
+            "project": {
+                "id": 158,
+                "name": "Day 04",
+                "slug": "piscine-c-day-04",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-07-13T13:50:29.452Z",
+            "marked": true,
+            "retriable_at": "2017-07-13T13:50:29.432Z"
+        },
+        {
+            "id": 544374,
+            "occurrence": 0,
+            "final_mark": 26,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1606219,
+            "project": {
+                "id": 167,
+                "name": "Day 09",
+                "slug": "piscine-c-day-09",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-07-15T10:27:25.206Z",
+            "marked": true,
+            "retriable_at": "2017-07-15T10:27:25.195Z"
+        },
+        {
+            "id": 543183,
+            "occurrence": 0,
+            "final_mark": 0,
+            "status": "finished",
+            "validated?": false,
+            "current_team_id": 1605054,
+            "project": {
+                "id": 172,
+                "name": "Match-N-Match",
+                "slug": "piscine-c-match-n-match",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-07-17T15:26:01.315Z",
+            "marked": true,
+            "retriable_at": "2017-07-17T15:26:01.287Z"
+        },
+        {
+            "id": 540040,
+            "occurrence": 1,
+            "final_mark": 80,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1601854,
+            "project": {
+                "id": 156,
+                "name": "Day 02",
+                "slug": "piscine-c-day-02",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-07-10T13:40:33.640Z",
+            "marked": true,
+            "retriable_at": "2017-07-10T13:40:33.624Z"
+        },
+        {
+            "id": 531608,
+            "occurrence": 2,
+            "final_mark": 85,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1600032,
+            "project": {
+                "id": 155,
+                "name": "Day 01",
+                "slug": "piscine-c-day-01",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-07-08T16:36:32.787Z",
+            "marked": true,
+            "retriable_at": "2017-07-08T16:36:32.771Z"
+        },
+        {
+            "id": 534107,
+            "occurrence": 0,
+            "final_mark": 0,
+            "status": "finished",
+            "validated?": false,
+            "current_team_id": 1592569,
+            "project": {
+                "id": 404,
+                "name": "Exam00",
+                "slug": "piscine-c-exam00",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-08-24T14:05:55.997Z",
+            "marked": true,
+            "retriable_at": "2017-08-24T14:05:55.973Z"
+        },
+        {
+            "id": 565735,
+            "occurrence": 0,
+            "final_mark": 48,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1630313,
+            "project": {
+                "id": 406,
+                "name": "Exam02",
+                "slug": "piscine-c-exam02",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-07-21T19:55:55.800Z",
+            "marked": true,
+            "retriable_at": "2017-07-21T19:17:03.192Z"
+        },
+        {
+            "id": 571879,
+            "occurrence": 0,
+            "final_mark": 45,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1638524,
+            "project": {
+                "id": 407,
+                "name": "Exam Final",
+                "slug": "piscine-c-exam-final",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-07-28T12:25:08.798Z",
+            "marked": true,
+            "retriable_at": "2017-07-28T10:07:41.714Z"
+        },
+        {
+            "id": 544417,
+            "occurrence": 0,
+            "final_mark": 0,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1606263,
+            "project": {
+                "id": 185,
+                "name": "01",
+                "slug": "piscine-c-day-09-01",
+                "parent_id": 167
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-08-24T14:05:55.554Z",
+            "marked": true,
+            "retriable_at": "2017-08-24T14:05:55.518Z"
+        },
+        {
+            "id": 544910,
+            "occurrence": 0,
+            "final_mark": 0,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1606753,
+            "project": {
+                "id": 201,
+                "name": "17",
+                "slug": "piscine-c-day-09-17",
+                "parent_id": 167
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-08-24T14:05:52.381Z",
+            "marked": true,
+            "retriable_at": "2017-08-24T14:05:52.359Z"
+        },
+        {
+            "id": 544922,
+            "occurrence": 0,
+            "final_mark": 0,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1606765,
+            "project": {
+                "id": 205,
+                "name": "21",
+                "slug": "piscine-c-day-09-21",
+                "parent_id": 167
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-08-24T14:05:51.450Z",
+            "marked": true,
+            "retriable_at": "2017-08-24T14:05:51.419Z"
+        },
+        {
+            "id": 544882,
+            "occurrence": 0,
+            "final_mark": 0,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1606725,
+            "project": {
+                "id": 197,
+                "name": "13",
+                "slug": "piscine-c-day-09-13",
+                "parent_id": 167
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-08-24T14:05:53.059Z",
+            "marked": true,
+            "retriable_at": "2017-08-24T14:05:53.033Z"
+        },
+        {
+            "id": 544821,
+            "occurrence": 0,
+            "final_mark": 0,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1606664,
+            "project": {
+                "id": 191,
+                "name": "07",
+                "slug": "piscine-c-day-09-07",
+                "parent_id": 167
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-08-24T14:05:54.330Z",
+            "marked": true,
+            "retriable_at": "2017-08-24T14:05:54.289Z"
+        },
+        {
+            "id": 544808,
+            "occurrence": 0,
+            "final_mark": 0,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1606651,
+            "project": {
+                "id": 188,
+                "name": "04",
+                "slug": "piscine-c-day-09-04",
+                "parent_id": 167
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-08-24T14:05:54.893Z",
+            "marked": true,
+            "retriable_at": "2017-08-24T14:05:54.877Z"
+        },
+        {
+            "id": 544792,
+            "occurrence": 0,
+            "final_mark": 0,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1606635,
+            "project": {
+                "id": 187,
+                "name": "03",
+                "slug": "piscine-c-day-09-03",
+                "parent_id": 167
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-08-24T14:05:55.092Z",
+            "marked": true,
+            "retriable_at": "2017-08-24T14:05:55.071Z"
+        },
+        {
+            "id": 755063,
+            "occurrence": 7,
+            "final_mark": 80,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 2344609,
+            "project": {
+                "id": 11,
+                "name": "C Exam Alone In The Dark - Beginner",
+                "slug": "c-exam-alone-in-the-dark-beginner",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                1
+            ],
+            "marked_at": "2018-12-04T09:37:14.733Z",
+            "marked": true,
+            "retriable_at": "2018-12-04T09:37:15.107Z"
+        },
+        {
+            "id": 776839,
+            "occurrence": 0,
+            "final_mark": 100,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1881748,
+            "project": {
+                "id": 96,
+                "name": "Savoir Relier",
+                "slug": "savoir-relier",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                1
+            ],
+            "marked_at": "2019-03-25T14:34:07.786Z",
+            "marked": true,
+            "retriable_at": "2019-03-25T14:34:07.863Z"
+        },
+        {
+            "id": 543181,
+            "occurrence": 0,
+            "final_mark": 38,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1605053,
+            "project": {
+                "id": 405,
+                "name": "Exam01",
+                "slug": "piscine-c-exam01",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-07-14T19:49:24.961Z",
+            "marked": true,
+            "retriable_at": "2017-07-14T18:50:37.496Z"
+        },
+        {
+            "id": 544426,
+            "occurrence": 0,
+            "final_mark": 0,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1606270,
+            "project": {
+                "id": 186,
+                "name": "02",
+                "slug": "piscine-c-day-09-02",
+                "parent_id": 167
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-08-24T14:05:55.322Z",
+            "marked": true,
+            "retriable_at": "2017-08-24T14:05:55.308Z"
+        },
+        {
+            "id": 544384,
+            "occurrence": 0,
+            "final_mark": 0,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1606229,
+            "project": {
+                "id": 175,
+                "name": "00",
+                "slug": "piscine-c-day-09-00",
+                "parent_id": 167
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-08-24T14:05:55.790Z",
+            "marked": true,
+            "retriable_at": "2017-08-24T14:05:55.761Z"
+        },
+        {
+            "id": 544876,
+            "occurrence": 0,
+            "final_mark": 0,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1606719,
+            "project": {
+                "id": 196,
+                "name": "12",
+                "slug": "piscine-c-day-09-12",
+                "parent_id": 167
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-08-24T14:05:53.226Z",
+            "marked": true,
+            "retriable_at": "2017-08-24T14:05:53.200Z"
+        },
+        {
+            "id": 544891,
+            "occurrence": 0,
+            "final_mark": 0,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1606734,
+            "project": {
+                "id": 198,
+                "name": "14",
+                "slug": "piscine-c-day-09-14",
+                "parent_id": 167
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-08-24T14:05:52.910Z",
+            "marked": true,
+            "retriable_at": "2017-08-24T14:05:52.895Z"
+        },
+        {
+            "id": 544837,
+            "occurrence": 0,
+            "final_mark": 0,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1606680,
+            "project": {
+                "id": 192,
+                "name": "08",
+                "slug": "piscine-c-day-09-08",
+                "parent_id": 167
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-08-24T14:05:54.070Z",
+            "marked": true,
+            "retriable_at": "2017-08-24T14:05:54.038Z"
+        },
+        {
+            "id": 544920,
+            "occurrence": 0,
+            "final_mark": 0,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1606763,
+            "project": {
+                "id": 204,
+                "name": "20",
+                "slug": "piscine-c-day-09-20",
+                "parent_id": 167
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-08-24T14:05:51.735Z",
+            "marked": true,
+            "retriable_at": "2017-08-24T14:05:51.716Z"
+        },
+        {
+            "id": 544850,
+            "occurrence": 0,
+            "final_mark": 0,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1606693,
+            "project": {
+                "id": 193,
+                "name": "09",
+                "slug": "piscine-c-day-09-09",
+                "parent_id": 167
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-08-24T14:05:53.883Z",
+            "marked": true,
+            "retriable_at": "2017-08-24T14:05:53.851Z"
+        },
+        {
+            "id": 544930,
+            "occurrence": 0,
+            "final_mark": 0,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1606773,
+            "project": {
+                "id": 207,
+                "name": "23",
+                "slug": "piscine-c-day-09-23",
+                "parent_id": 167
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-08-24T14:05:50.971Z",
+            "marked": true,
+            "retriable_at": "2017-08-24T14:05:50.954Z"
+        },
+        {
+            "id": 544865,
+            "occurrence": 0,
+            "final_mark": 0,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1606708,
+            "project": {
+                "id": 194,
+                "name": "10",
+                "slug": "piscine-c-day-09-10",
+                "parent_id": 167
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-08-24T14:05:53.672Z",
+            "marked": true,
+            "retriable_at": "2017-08-24T14:05:53.637Z"
+        },
+        {
+            "id": 544817,
+            "occurrence": 0,
+            "final_mark": 0,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1606660,
+            "project": {
+                "id": 190,
+                "name": "06",
+                "slug": "piscine-c-day-09-06",
+                "parent_id": 167
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-08-24T14:05:54.523Z",
+            "marked": true,
+            "retriable_at": "2017-08-24T14:05:54.502Z"
+        },
+        {
+            "id": 544912,
+            "occurrence": 0,
+            "final_mark": 0,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1606755,
+            "project": {
+                "id": 202,
+                "name": "18",
+                "slug": "piscine-c-day-09-18",
+                "parent_id": 167
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-08-24T14:05:52.151Z",
+            "marked": true,
+            "retriable_at": "2017-08-24T14:05:52.130Z"
+        },
+        {
+            "id": 544815,
+            "occurrence": 0,
+            "final_mark": 0,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1606658,
+            "project": {
+                "id": 189,
+                "name": "05",
+                "slug": "piscine-c-day-09-05",
+                "parent_id": 167
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-08-24T14:05:54.719Z",
+            "marked": true,
+            "retriable_at": "2017-08-24T14:05:54.701Z"
+        },
+        {
+            "id": 544928,
+            "occurrence": 0,
+            "final_mark": 0,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1606771,
+            "project": {
+                "id": 206,
+                "name": "22",
+                "slug": "piscine-c-day-09-22",
+                "parent_id": 167
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-08-24T14:05:51.234Z",
+            "marked": true,
+            "retriable_at": "2017-08-24T14:05:51.194Z"
+        },
+        {
+            "id": 544905,
+            "occurrence": 0,
+            "final_mark": 0,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1606748,
+            "project": {
+                "id": 200,
+                "name": "16",
+                "slug": "piscine-c-day-09-16",
+                "parent_id": 167
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-08-24T14:05:52.564Z",
+            "marked": true,
+            "retriable_at": "2017-08-24T14:05:52.549Z"
+        },
+        {
+            "id": 544900,
+            "occurrence": 0,
+            "final_mark": 0,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1606743,
+            "project": {
+                "id": 199,
+                "name": "15",
+                "slug": "piscine-c-day-09-15",
+                "parent_id": 167
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-08-24T14:05:52.718Z",
+            "marked": true,
+            "retriable_at": "2017-08-24T14:05:52.695Z"
+        },
+        {
+            "id": 544874,
+            "occurrence": 0,
+            "final_mark": 0,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1606717,
+            "project": {
+                "id": 195,
+                "name": "11",
+                "slug": "piscine-c-day-09-11",
+                "parent_id": 167
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-08-24T14:05:53.449Z",
+            "marked": true,
+            "retriable_at": "2017-08-24T14:05:53.432Z"
+        },
+        {
+            "id": 544916,
+            "occurrence": 0,
+            "final_mark": 0,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 1606759,
+            "project": {
+                "id": 203,
+                "name": "19",
+                "slug": "piscine-c-day-09-19",
+                "parent_id": 167
+            },
+            "cursus_ids": [
+                6
+            ],
+            "marked_at": "2017-08-24T14:05:51.918Z",
+            "marked": true,
+            "retriable_at": "2017-08-24T14:05:51.898Z"
+        },
+        {
+            "id": 1350264,
+            "occurrence": 0,
+            "final_mark": 116,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 2545987,
+            "project": {
+                "id": 118,
+                "name": "First Internship",
+                "slug": "first-internship",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                1
+            ],
+            "marked_at": "2019-10-25T11:38:30.638Z",
+            "marked": true,
+            "retriable_at": "2019-10-25T11:38:31.359Z"
+        },
+        {
+            "id": 1350291,
+            "occurrence": 0,
+            "final_mark": 100,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 2546017,
+            "project": {
+                "id": 119,
+                "name": "Contract Upload",
+                "slug": "first-internship-contract-upload",
+                "parent_id": 118
+            },
+            "cursus_ids": [
+                1
+            ],
+            "marked_at": "2019-05-17T12:05:05.968Z",
+            "marked": true,
+            "retriable_at": "2019-05-17T12:05:06.003Z"
+        },
+        {
+            "id": 1350292,
+            "occurrence": 0,
+            "final_mark": 100,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 2546018,
+            "project": {
+                "id": 140,
+                "name": "Duration",
+                "slug": "first-internship-duration",
+                "parent_id": 118
+            },
+            "cursus_ids": [
+                1
+            ],
+            "marked_at": "2019-05-17T12:05:06.260Z",
+            "marked": true,
+            "retriable_at": null
+        },
+        {
+            "id": 1350293,
+            "occurrence": 0,
+            "final_mark": 125,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 2546019,
+            "project": {
+                "id": 826,
+                "name": "Company mid evaluation",
+                "slug": "first-internship-company-mid-evaluation",
+                "parent_id": 118
+            },
+            "cursus_ids": [
+                1
+            ],
+            "marked_at": "2019-07-29T19:07:59.721Z",
+            "marked": true,
+            "retriable_at": null
+        },
+        {
+            "id": 1350294,
+            "occurrence": 0,
+            "final_mark": 125,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 2546020,
+            "project": {
+                "id": 120,
+                "name": "Company final evaluation",
+                "slug": "first-internship-company-final-evaluation",
+                "parent_id": 118
+            },
+            "cursus_ids": [
+                1
+            ],
+            "marked_at": "2019-09-23T12:18:16.755Z",
+            "marked": true,
+            "retriable_at": null
+        },
+        {
+            "id": 1703110,
+            "occurrence": 0,
+            "final_mark": 125,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 2976339,
+            "project": {
+                "id": 1475,
+                "name": "corewar",
+                "slug": "42cursus-corewar",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                21
+            ],
+            "marked_at": "2018-12-18T22:22:58.000Z",
+            "marked": true,
+            "retriable_at": "2019-12-19T23:00:00.000Z"
+        },
+        {
+            "id": 1794742,
+            "occurrence": 0,
+            "final_mark": 125,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 3078712,
+            "project": {
+                "id": 1391,
+                "name": "ft_linear_regression",
+                "slug": "42cursus-ft_linear_regression",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                21
+            ],
+            "marked_at": "2020-02-12T14:07:41.687Z",
+            "marked": true,
+            "retriable_at": "2020-02-15T14:07:42.050Z"
+        },
+        {
+            "id": 1703113,
+            "occurrence": 0,
+            "final_mark": 100,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 2976342,
+            "project": {
+                "id": 1639,
+                "name": "Internship I - Duration",
+                "slug": "internship-i-internship-i-duration",
+                "parent_id": 1638
+            },
+            "cursus_ids": [
+                21
+            ],
+            "marked_at": "2019-05-17T12:05:06.000Z",
+            "marked": true,
+            "retriable_at": "2019-12-19T23:00:00.000Z"
+        },
+        {
+            "id": 1703111,
+            "occurrence": 0,
+            "final_mark": 111,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 2976340,
+            "project": {
+                "id": 1470,
+                "name": "lem_in",
+                "slug": "42cursus-lem_in",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                21
+            ],
+            "marked_at": "2018-10-02T16:14:18.000Z",
+            "marked": true,
+            "retriable_at": "2019-12-19T23:00:00.000Z"
+        },
+        {
+            "id": 1703114,
+            "occurrence": 0,
+            "final_mark": 100,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 2976343,
+            "project": {
+                "id": 1640,
+                "name": "internship I - Contract Upload",
+                "slug": "internship-i-internship-i-contract-upload",
+                "parent_id": 1638
+            },
+            "cursus_ids": [
+                21
+            ],
+            "marked_at": "2019-05-17T12:05:05.000Z",
+            "marked": true,
+            "retriable_at": "2019-12-19T23:00:00.000Z"
+        },
+        {
+            "id": 1703115,
+            "occurrence": 0,
+            "final_mark": 125,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 2976344,
+            "project": {
+                "id": 1642,
+                "name": "internship I - Company Final Evaluation",
+                "slug": "internship-i-internship-i-company-final-evaluation",
+                "parent_id": 1638
+            },
+            "cursus_ids": [
+                21
+            ],
+            "marked_at": "2019-09-23T12:18:16.000Z",
+            "marked": true,
+            "retriable_at": "2019-12-19T23:00:00.000Z"
+        },
+        {
+            "id": 1703112,
+            "occurrence": 0,
+            "final_mark": 116,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 2976341,
+            "project": {
+                "id": 1638,
+                "name": "Internship I",
+                "slug": "internship-i",
+                "parent_id": null
+            },
+            "cursus_ids": [
+                21
+            ],
+            "marked_at": "2019-10-25T11:38:30.000Z",
+            "marked": true,
+            "retriable_at": "2019-12-19T23:00:00.000Z"
+        },
+        {
+            "id": 1703116,
+            "occurrence": 0,
+            "final_mark": 100,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 2976345,
+            "project": {
+                "id": 1643,
+                "name": "Internship I - Peer Video",
+                "slug": "internship-i-internship-i-peer-video",
+                "parent_id": 1638
+            },
+            "cursus_ids": [
+                21
+            ],
+            "marked_at": "2019-10-25T11:38:30.000Z",
+            "marked": true,
+            "retriable_at": "2019-12-19T23:00:00.000Z"
+        },
+        {
+            "id": 1703117,
+            "occurrence": 0,
+            "final_mark": 125,
+            "status": "finished",
+            "validated?": true,
+            "current_team_id": 2976346,
+            "project": {
+                "id": 1641,
+                "name": "internship I - Company Mid Evaluation",
+                "slug": "internship-i-internship-i-company-mid-evaluation",
+                "parent_id": 1638
+            },
+            "cursus_ids": [
+                21
+            ],
+            "marked_at": "2019-07-29T19:07:59.000Z",
+            "marked": true,
+            "retriable_at": "2019-12-19T23:00:00.000Z"
+        }
+    ],
+    "campus": [
+        {
+            "id": 1,
+            "country": "France",
+            "city": "Paris",
+            "active": true
+        }
+    ]
+}

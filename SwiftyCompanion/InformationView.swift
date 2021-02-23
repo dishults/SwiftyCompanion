@@ -46,7 +46,17 @@ struct InformationView: View {
                         }
                     }
                 }
-                //TODO: projects user has done even if he has failed them
+                Section(header: Text("Projects")) {
+                    ForEach(user.projects_users) { project in
+                        if project.status == "finished" {
+                            HStack {
+                                Text(project.project.name)
+                                Spacer()
+                                Text(String(project.final_mark ?? 0))
+                            }
+                        }
+                    }
+                }
             }
             .listStyle(InsetGroupedListStyle())
             .navigationBarTitle(Text(login))
@@ -58,8 +68,9 @@ struct InformationView: View {
 
 struct InformationView_Previews: PreviewProvider {
     static var previews: some View {
-        InformationView(login: "norminet")
-        InformationView(login: "test")
-        InformationView(login: "nonuser")
+//        InformationView(login: "norminet")
+        InformationView(login: "dshults")
+//        InformationView(login: "test")
+//        InformationView(login: "nonuser")
     }
 }
