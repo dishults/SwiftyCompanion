@@ -36,7 +36,7 @@ struct InformationView: View {
                 }
                 Section(header:
                             VStack {
-                                Text("Skills").font(.headline)
+                                Text("Skills and Projects").font(.headline)
                                 HStack {
                                     Text("Cursus").padding(.leading)
                                     Spacer()
@@ -44,26 +44,18 @@ struct InformationView: View {
                                 }
                             }
                 ) {
-                    ForEach(user.cursus_users.sorted { $0.level > $1.level }) { cursusUser in
-                        if !cursusUser.skills.isEmpty {
-                            NavigationLink(destination: SkillsView(cursusUser: cursusUser)) {
-                                Text(String(cursusUser.cursus.name))
-                                Spacer()
-                                Text(String(cursusUser.level))
+                    let cursusUsers = user.cursus_users.filter { !$0.skills.isEmpty }
+                    if !cursusUsers.isEmpty {
+                        ForEach(cursusUsers.sorted { $0.level > $1.level }) { cursusUser in
+                            if !cursusUser.skills.isEmpty {
+                                NavigationLink(destination: SkillsAndProjectsView(cursusUser: cursusUser, projectUser: user.projects_users)) {
+                                    Text(String(cursusUser.cursus.name))
+                                    Spacer()
+                                    Text(String(cursusUser.level))
+                                }
                             }
                         }
-                    }
-                }
-                Section(header: Text("Projects")) {
-                    ForEach(user.projects_users) { project in
-                        if project.status == "finished" {
-                            HStack {
-                                Text(project.project.name)
-                                Spacer()
-                                Text(String(project.final_mark ?? 0))
-                            }
-                        }
-                    }
+                    } else { Text("No skills/projects yet") }
                 }
             }
             .listStyle(InsetGroupedListStyle())

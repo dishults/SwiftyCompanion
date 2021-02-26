@@ -44,23 +44,34 @@ struct Skills: Identifiable, Codable {
 
 
 struct Cursus: Codable {
+    let id: Int
     let name: String
 }
 
 
 struct ProjectsUser: Identifiable, Codable {
     let id: Int
-    let final_mark: Int?
+    let finalMark: Int?
     let status: String
     let validated: Bool?
     let project: Project
+    let cursusIDS: [Int]
 
     enum CodingKeys: String, CodingKey {
         case id
-        case final_mark
+        case finalMark = "final_mark"
         case status
         case validated = "validated?"
         case project
+        case cursusIDS = "cursus_ids"
+    }
+
+    func getColor() -> Color {
+        if self.validated == true {
+            return Color.green
+        } else {
+            return Color.red
+        }
     }
 }
 
