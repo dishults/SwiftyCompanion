@@ -16,16 +16,17 @@ struct InformationView: View {
                 user.getImage()?
                     .resizable()
                     .scaledToFill()
-                Section(header: Text("Details")) {
+                Section(header:
+                            HStack {
+                                Spacer()
+                                Text("Details").font(.headline)
+                                Spacer()
+                            }
+                ) {
                     HStack {
                         Label("Email", systemImage: "envelope")
                         Spacer()
                         Text(user.email)
-                    }
-                    HStack {
-                        Label("Level", systemImage: "42.circle")
-                        Spacer()
-                        Text(String(user.cursus_users[0].level))
                     }
                     HStack {
                         Label("Location", systemImage: "mappin")
@@ -33,15 +34,22 @@ struct InformationView: View {
                         Text("\(user.campus[0].city)/\(user.campus[0].country)")
                     }
                 }
-                Section(header: Text("Skills")) {
-                    ForEach(user.cursus_users) { cursus_user in
-                        if !cursus_user.skills.isEmpty {
-                            ForEach(cursus_user.skills) { skill in
+                Section(header:
+                            VStack {
+                                Text("Skills").font(.headline)
                                 HStack {
-                                    Text(skill.name)
+                                    Text("Cursus").padding(.leading)
                                     Spacer()
-                                    Text(String(skill.level))
+                                    Text("Level").padding(.trailing)
                                 }
+                            }
+                ) {
+                    ForEach(user.cursus_users.sorted { $0.level > $1.level }) { cursusUser in
+                        if !cursusUser.skills.isEmpty {
+                            NavigationLink(destination: SkillsView(cursusUser: cursusUser)) {
+                                Text(String(cursusUser.cursus.name))
+                                Spacer()
+                                Text(String(cursusUser.level))
                             }
                         }
                     }

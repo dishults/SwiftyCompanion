@@ -13,6 +13,7 @@
 		327B855125E420310056598D /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 327B854F25E420310056598D /* test.json */; };
 		327B855225E420310056598D /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 327B855025E420310056598D /* test.jpg */; };
 		329EF2E525DFE7A300A7369E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329EF2E425DFE7A300A7369E /* User.swift */; };
+		32B4B08825E909AF006484A1 /* SkillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B4B08725E909AF006484A1 /* SkillsView.swift */; };
 		32DC6AB225DAE37300877D6D /* SwiftyCompanionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC6AB125DAE37300877D6D /* SwiftyCompanionApp.swift */; };
 		32DC6AB425DAE37300877D6D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC6AB325DAE37300877D6D /* LoginView.swift */; };
 		32DC6AB625DAE37400877D6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32DC6AB525DAE37400877D6D /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 		327B854F25E420310056598D /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
 		327B855025E420310056598D /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
 		329EF2E425DFE7A300A7369E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		32B4B08725E909AF006484A1 /* SkillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsView.swift; sourceTree = "<group>"; };
 		32DC6AAE25DAE37300877D6D /* SwiftyCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32DC6AB125DAE37300877D6D /* SwiftyCompanionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyCompanionApp.swift; sourceTree = "<group>"; };
 		32DC6AB325DAE37300877D6D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				32DC6AB125DAE37300877D6D /* SwiftyCompanionApp.swift */,
 				32DC6AB325DAE37300877D6D /* LoginView.swift */,
 				32DC6AC325DAE8E300877D6D /* InformationView.swift */,
+				32B4B08725E909AF006484A1 /* SkillsView.swift */,
 				32DC6AB525DAE37400877D6D /* Assets.xcassets */,
 				32DC6ABA25DAE37400877D6D /* Info.plist */,
 				329EF2E325DFE79200A7369E /* Models */,
@@ -179,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32B4B08825E909AF006484A1 /* SkillsView.swift in Sources */,
 				329EF2E525DFE7A300A7369E /* User.swift in Sources */,
 				32DC6AC425DAE8E300877D6D /* InformationView.swift in Sources */,
 				32057BE125E2BDC900F4B61D /* OAuth2.swift in Sources */,

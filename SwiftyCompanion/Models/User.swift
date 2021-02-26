@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct User: Codable {
-    
     let login, email: String
     var image_url: String
     let cursus_users: [CursusUser]
@@ -23,6 +22,7 @@ struct User: Codable {
     }
 }
 
+
 struct CursusUser: Identifiable, Codable {
     let id: Int
     let level: Float
@@ -30,23 +30,23 @@ struct CursusUser: Identifiable, Codable {
     let cursus: Cursus
 }
 
+
 struct Campus: Codable {
     let city, country: String
 }
+
 
 struct Skills: Identifiable, Codable {
     var id: Int
     let name: String
     let level: Float
 }
-/*
- "id": 27262,
- "id": 21310,
- "id": 83610,
- */
+
+
 struct Cursus: Codable {
     let name: String
 }
+
 
 struct ProjectsUser: Identifiable, Codable {
     let id: Int
@@ -63,6 +63,7 @@ struct ProjectsUser: Identifiable, Codable {
         case project
     }
 }
+
 
 struct Project: Codable {
     let name: String
