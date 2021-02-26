@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct User: Codable {
-    let login, email: String
-    var image_url: String
+    let login, email, image_url: String
+    let pool_month, pool_year: String?
     let cursus_users: [CursusUser]
     let campus: [Campus]
     let projects_users: [ProjectsUser]
@@ -23,7 +23,7 @@ struct User: Codable {
 }
 
 
-struct CursusUser: Identifiable, Codable {
+struct CursusUser: Codable, Identifiable {
     let id: Int
     let level: Float
     let skills: [Skills]
@@ -31,12 +31,14 @@ struct CursusUser: Identifiable, Codable {
 }
 
 
-struct Campus: Codable {
+struct Campus: Codable, Identifiable {
+    let id: Int
     let city, country: String
+    let active: Bool
 }
 
 
-struct Skills: Identifiable, Codable {
+struct Skills: Codable, Identifiable {
     var id: Int
     let name: String
     let level: Float
@@ -49,7 +51,7 @@ struct Cursus: Codable {
 }
 
 
-struct ProjectsUser: Identifiable, Codable {
+struct ProjectsUser: Codable, Identifiable {
     let id: Int
     let finalMark: Int?
     let status: String

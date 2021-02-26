@@ -2,6 +2,8 @@
     "email": "dshults@student.42.fr",
     "login": "dshults",
     "image_url": "https://cdn.intra.42.fr/users/dshults.jpg",
+    "pool_month": "july",
+    "pool_year": "2017",
     "cursus_users": [
         {
             "grade": "Commander",
