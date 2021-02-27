@@ -84,20 +84,9 @@ struct Project: Codable {
 
 
 func getUser(login: String) -> User? {
-    //FIXME: Change to -> do catch
-    guard let pathString = Bundle.main.path(forResource: login, ofType: "json") else {
-       return nil
-    }
-    guard let jsonString = try? String(contentsOfFile: pathString, encoding: .utf8) else {
-        return nil
-    }
-
-    guard let jsonData = jsonString.data(using: .utf8) else {
-        return nil
-    }
-
-    guard let jsonDictionary = try? JSONDecoder().decode(User.self, from: jsonData) else {
-        return nil
-    }
+    guard let pathString = Bundle.main.path(forResource: login, ofType: "json") else { return nil }
+    guard let jsonString = try? String(contentsOfFile: pathString, encoding: .utf8) else { return nil }
+    guard let jsonData = jsonString.data(using: .utf8) else { return nil }
+    guard let jsonDictionary = try? JSONDecoder().decode(User.self, from: jsonData) else { return nil }
     return jsonDictionary
 }
