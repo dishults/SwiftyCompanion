@@ -10,19 +10,41 @@ import SwiftUI
 
 struct InformationView: View {
     let login: String
+    @Binding var oauth2: OAuth2
+    let group = DispatchGroup()
+
+    var body: some View {
+        if let token = oauth2.token {
+            if let user = oauth2.getUser(login: login, group: group) {
+                proceed(user: user, login: login, token: token, group: group)
+            } else {
+                Text("No such user, try another one.")
+            }
+        } else {
+            if let user = getTestUser(login: login, group: group) {
+                proceed(user: user, login: login, token: nil, group: group)
+            } else {
+                Text("No such user, try another one.")
+            }
+        }
+    }
+}
+
+
+struct proceed: View {
+    let user: User
+    let login: String
+    let token: Token?
+    let group: DispatchGroup
     
     var body: some View {
-        if let user = getUser(login: login) {
-            List {
-                user.getImage()?.resizable().scaledToFill()
-                showDetails(user: user)
-                showSkillsAndProjects(user: user)
-            }
-            .listStyle(InsetGroupedListStyle())
-            .navigationBarTitle(Text(login))
-        } else {
-            Text("No such user, try another one.")
+        List {
+            user.getImage(group: group, token: token)?.resizable().scaledToFill()
+            showDetails(user: user)
+            showSkillsAndProjects(user: user)
         }
+        .listStyle(InsetGroupedListStyle())
+        .navigationBarTitle(Text(login))
     }
 }
 
@@ -93,9 +115,9 @@ struct showSkillsAndProjects: View {
 
 struct InformationView_Previews: PreviewProvider {
     static var previews: some View {
-        InformationView(login: "norminet")
-        InformationView(login: "dshults")
-        InformationView(login: "test")
-        InformationView(login: "nonuser")
+        InformationView(login: "norminet", oauth2: .constant(OAuth2()))
+//        InformationView(login: "dshults", oauth2: .constant(OAuth2()))
+        InformationView(login: "test", oauth2: .constant(OAuth2()))
+//        InformationView(login: "nonuser", oauth2: .constant(OAuth2()))
     }
 }

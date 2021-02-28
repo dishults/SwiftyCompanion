@@ -14,11 +14,35 @@ struct User: Codable {
     let campus: [Campus]
     let projects_users: [ProjectsUser]
     
-    func getImage() -> Image? {
-        guard let pathString = Bundle.main.path(forResource: self.login, ofType: "jpg") else {
-            fatalError("login.jpg not found")
+    func getImage(group: DispatchGroup, token: Token?) -> Image? {
+        var image: Image?
+        // Preview
+        if token == nil {
+            guard let pathString = Bundle.main.path(forResource: self.login, ofType: "jpg") else {
+                fatalError("login.jpg not found")
+            }
+            image = Image(uiImage: UIImage(named: pathString)!)
+        // API
+        } else {
+            let url = URL(string: image_url)!
+            
+            var request = URLRequest(url: url)
+            request.httpMethod = "GET"
+            request.setValue("Bearer \(token!.access_token)", forHTTPHeaderField: "Authorization")
+            
+            group.enter()
+            URLSession.shared.dataTask(with: request) { data, response, error in
+                guard let data = data else {
+                    print("No data in response: \(error?.localizedDescription ?? "Unknown error").")
+                    group.leave()
+                    return
+                }
+                image = Image(uiImage: UIImage(data: data)!)
+                group.leave()
+            }.resume()
+            group.wait()
         }
-        return Image(uiImage: UIImage(named: pathString)!)
+        return image
     }
 }
 
@@ -82,8 +106,8 @@ struct Project: Codable {
     let name: String
 }
 
-
-func getUser(login: String) -> User? {
+// Preview
+func getTestUser(login: String, group: DispatchGroup) -> User? {
     guard let pathString = Bundle.main.path(forResource: login, ofType: "json") else { return nil }
     guard let jsonString = try? String(contentsOfFile: pathString, encoding: .utf8) else { return nil }
     guard let jsonData = jsonString.data(using: .utf8) else { return nil }

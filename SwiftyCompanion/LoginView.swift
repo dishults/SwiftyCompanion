@@ -10,10 +10,13 @@ import SwiftUI
 
 struct LoginView: View {
     @State private var login: String = ""
-    @State private var isEditing = false
-    
-    init() {
+    @State private var oauth2 = OAuth2()
+
+    init(getToken: Bool = true) {
         UINavigationBar.appearance().largeTitleTextAttributes = [.font : UIFont(name: "Arial Rounded MT Bold", size: 40)!]
+        if getToken {
+            self.oauth2.getToken()
+        }
     }
 
     var body: some View {
@@ -54,7 +57,7 @@ struct LoginView: View {
                         .autocapitalization(.none)
                         .disableAutocorrection(true)
                     }
-                NavigationLink(destination: InformationView(login: login)) {
+                NavigationLink(destination: InformationView(login: login, oauth2: $oauth2)) {
                     Text("Search")
                         .accessibilityLabel(Text("Search 42 student by login"))
                 }
@@ -69,6 +72,6 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        LoginView(getToken: false)
     }
 }
