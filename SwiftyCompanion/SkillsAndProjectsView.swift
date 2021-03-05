@@ -16,7 +16,7 @@ struct SkillsAndProjectsView: View {
             // MARK: - Skills section
             Section(header:
                 VStack {
-                    Text("Skills").font(.headline)
+                    Text("Skills").font(customHeadline())
                     HStack {
                         Text("Skill").padding(.leading)
                         Spacer()
@@ -31,12 +31,13 @@ struct SkillsAndProjectsView: View {
                         Text(String(skill.level))
                     }
                 }
+                .font(customBody())
             }
 
             // MARK: - Finished Projects section
             Section(header:
                 VStack {
-                    Text("Finished Projects").font(.headline)
+                    Text("Finished Projects").font(customHeadline())
                     HStack {
                         Text("Project").padding(.leading)
                         Spacer()
@@ -55,6 +56,7 @@ struct SkillsAndProjectsView: View {
                         }
                     }
                 }
+                .font(customBody())
             }
         }
         .listStyle(InsetGroupedListStyle())

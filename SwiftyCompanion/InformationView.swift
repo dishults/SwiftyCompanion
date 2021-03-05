@@ -39,7 +39,9 @@ struct proceed: View {
     
     var body: some View {
         List {
-            user.getImage(group: group, token: token)?.resizable().scaledToFill()
+            user.getImage(group: group, token: token)?
+                .resizable().scaledToFill()
+                .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
             showDetails(user: user)
             showSkillsAndProjects(user: user)
         }
@@ -56,7 +58,7 @@ struct showDetails: View {
         Section(header:
                         HStack {
                             Spacer()
-                            Text("Details").font(.headline)
+                            Text("Details").font(customHeadline())
                             Spacer()
                         }
         ) {
@@ -65,6 +67,7 @@ struct showDetails: View {
                 Spacer()
                 Text(user.email)
             }
+            
             let activeCampus = user.campus.filter { $0.active == true }
             ForEach(activeCampus) { campus in
                 HStack {
@@ -79,6 +82,7 @@ struct showDetails: View {
                 Text("\(user.pool_month ?? "") \(user.pool_year ?? "")")
             }
         }
+        .font(.system(size: 18, design: .rounded))
     }
 }
 
@@ -88,7 +92,7 @@ struct showSkillsAndProjects: View {
     var body: some View {
         Section(header:
                     VStack {
-                        Text("Skills and Projects").font(.headline)
+                        Text("Skills and Projects").font(customHeadline())
                         HStack {
                             Text("Cursus").padding(.leading)
                             Spacer()
@@ -107,6 +111,7 @@ struct showSkillsAndProjects: View {
                         }
                     }
                 }
+                .font(customBody())
             } else { Text("No skills/projects yet") }
         }
     }
@@ -115,9 +120,9 @@ struct showSkillsAndProjects: View {
 
 struct InformationView_Previews: PreviewProvider {
     static var previews: some View {
-        InformationView(login: "norminet", oauth2: .constant(OAuth2()))
-//        InformationView(login: "dshults", oauth2: .constant(OAuth2()))
-        InformationView(login: "test", oauth2: .constant(OAuth2()))
+//        InformationView(login: "norminet", oauth2: .constant(OAuth2()))
+        InformationView(login: "dshults", oauth2: .constant(OAuth2()))
+//        InformationView(login: "test", oauth2: .constant(OAuth2()))
 //        InformationView(login: "nonuser", oauth2: .constant(OAuth2()))
     }
 }
