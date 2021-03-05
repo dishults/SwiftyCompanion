@@ -10,19 +10,21 @@ import SwiftUI
 struct User: Codable {
     let login, email, image_url: String
     let pool_month, pool_year: String?
-    let cursus_users: [CursusUser]
     let campus: [Campus]
+    let cursus_users: [CursusUser]
     let projects_users: [ProjectsUser]
     
     func getImage(group: DispatchGroup, token: Token?) -> Image? {
         var image: Image?
-        // Preview
+
+        // MARK: - Get image for Preview
         if token == nil {
             guard let pathString = Bundle.main.path(forResource: self.login, ofType: "jpg") else {
                 fatalError("login.jpg not found")
             }
             image = Image(uiImage: UIImage(named: pathString)!)
-        // API
+
+        // MARK: - Get image for 42 API
         } else {
             let url = URL(string: image_url)!
             
@@ -47,18 +49,20 @@ struct User: Codable {
 }
 
 
+// MARK: - Campus
+struct Campus: Codable, Identifiable {
+    let id: Int
+    let city, country: String
+    let active: Bool
+}
+
+
+// MARK: - CursusUser
 struct CursusUser: Codable, Identifiable {
     let id: Int
     let level: Float
     let skills: [Skills]
     let cursus: Cursus
-}
-
-
-struct Campus: Codable, Identifiable {
-    let id: Int
-    let city, country: String
-    let active: Bool
 }
 
 
@@ -75,6 +79,7 @@ struct Cursus: Codable {
 }
 
 
+// MARK: - ProjectsUser
 struct ProjectsUser: Codable, Identifiable {
     let id: Int
     let finalMark: Int?
@@ -106,7 +111,8 @@ struct Project: Codable {
     let name: String
 }
 
-// Preview
+
+// MARK: - Get test User for Preview
 func getTestUser(login: String, group: DispatchGroup) -> User? {
     guard let pathString = Bundle.main.path(forResource: login, ofType: "json") else { return nil }
     guard let jsonString = try? String(contentsOfFile: pathString, encoding: .utf8) else { return nil }

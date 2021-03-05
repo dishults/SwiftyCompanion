@@ -13,6 +13,7 @@ struct SkillsAndProjectsView: View {
 
     var body: some View {
         List {
+            // MARK: - Skills section
             Section(header:
                 VStack {
                     Text("Skills").font(.headline)
@@ -31,6 +32,8 @@ struct SkillsAndProjectsView: View {
                     }
                 }
             }
+
+            // MARK: - Finished Projects section
             Section(header:
                 VStack {
                     Text("Finished Projects").font(.headline)
