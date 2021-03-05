@@ -55,7 +55,8 @@ class OAuth2 {
         }
     }
 
-    func getUser(login: String, group: DispatchGroup) -> User? {
+    func getUser(login: String) -> User? {
+        let group = DispatchGroup()
         let url = URL(string: "\(userURL)\(login)")!
         checkAndRenewToken()
         

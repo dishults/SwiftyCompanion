@@ -14,7 +14,8 @@ struct User: Codable {
     let cursus_users: [CursusUser]
     let projects_users: [ProjectsUser]
     
-    func getImage(group: DispatchGroup, token: Token?) -> Image? {
+    func getImage(token: Token?) -> Image? {
+        let group = DispatchGroup()
         var image: Image?
 
         // MARK: - Get image for Preview
@@ -113,7 +114,7 @@ struct Project: Codable {
 
 
 // MARK: - Get test User for Preview
-func getTestUser(login: String, group: DispatchGroup) -> User? {
+func getTestUser(login: String) -> User? {
     guard let pathString = Bundle.main.path(forResource: login, ofType: "json") else { return nil }
     guard let jsonString = try? String(contentsOfFile: pathString, encoding: .utf8) else { return nil }
     guard let jsonData = jsonString.data(using: .utf8) else { return nil }

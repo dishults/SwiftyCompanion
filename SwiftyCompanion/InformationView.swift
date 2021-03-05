@@ -11,18 +11,17 @@ import SwiftUI
 struct InformationView: View {
     let login: String
     @Binding var oauth2: OAuth2
-    let group = DispatchGroup()
 
     var body: some View {
         if let token = oauth2.token {
-            if let user = oauth2.getUser(login: login, group: group) {
-                proceed(user: user, login: login, token: token, group: group)
+            if let user = oauth2.getUser(login: login) {
+                proceed(user: user, login: login, token: token)
             } else {
                 Text("No such user, try another one.")
             }
         } else {
-            if let user = getTestUser(login: login, group: group) {
-                proceed(user: user, login: login, token: nil, group: group)
+            if let user = getTestUser(login: login) {
+                proceed(user: user, login: login, token: nil)
             } else {
                 Text("No such user, try another one.")
             }
@@ -35,11 +34,11 @@ struct proceed: View {
     let user: User
     let login: String
     let token: Token?
-    let group: DispatchGroup
+    let group = DispatchGroup()
     
     var body: some View {
         List {
-            user.getImage(group: group, token: token)?
+            user.getImage(token: token)?
                 .resizable().scaledToFill()
                 .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
             showDetails(user: user)
@@ -120,9 +119,9 @@ struct showSkillsAndProjects: View {
 
 struct InformationView_Previews: PreviewProvider {
     static var previews: some View {
-//        InformationView(login: "norminet", oauth2: .constant(OAuth2()))
-        InformationView(login: "dshults", oauth2: .constant(OAuth2()))
-//        InformationView(login: "test", oauth2: .constant(OAuth2()))
-//        InformationView(login: "nonuser", oauth2: .constant(OAuth2()))
+//        InformationView(login: "norminet", oauth2: .constant(OAuth2())).preferredColorScheme(.light)
+        InformationView(login: "dshults", oauth2: .constant(OAuth2())).preferredColorScheme(.light)
+//        InformationView(login: "test", oauth2: .constant(OAuth2())).preferredColorScheme(.light)
+//        InformationView(login: "nonuser", oauth2: .constant(OAuth2())).preferredColorScheme(.light)
     }
 }
