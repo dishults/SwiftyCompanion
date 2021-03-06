@@ -34,7 +34,6 @@ struct proceed: View {
     let user: User
     let login: String
     let token: Token?
-    let group = DispatchGroup()
     
     var body: some View {
         List {
@@ -46,6 +45,15 @@ struct proceed: View {
         }
         .listStyle(InsetGroupedListStyle())
         .navigationBarTitle(Text(login))
+        .navigationBarItems(trailing: Button(action: shareProfile) {
+            Image(systemName: "square.and.arrow.up").imageScale(.large)
+        })
+    }
+
+    func shareProfile() {
+        let items = [URL(string: "https://profile.intra.42.fr/users/\(user.login)")!]
+        let av = UIActivityViewController(activityItems: items, applicationActivities: nil)
+        UIApplication.shared.windows.first?.rootViewController?.present(av, animated: true, completion: nil)
     }
 }
 
@@ -54,13 +62,11 @@ struct showDetails: View {
     let user: User
 
     var body: some View {
-        Section(header:
-                        HStack {
-                            Spacer()
-                            Text("Details").font(customHeadline())
-                            Spacer()
-                        }
-        ) {
+        Section(header: HStack {
+            Spacer()
+            Text("Details").font(customHeadline())
+            Spacer()
+        }) {
             HStack {
                 Label("Email", systemImage: "envelope")
                 Spacer()
@@ -85,20 +91,19 @@ struct showDetails: View {
     }
 }
 
+
 struct showSkillsAndProjects: View {
     let user: User
 
     var body: some View {
-        Section(header:
-                    VStack {
-                        Text("Skills and Projects").font(customHeadline())
-                        HStack {
-                            Text("Cursus").padding(.leading)
-                            Spacer()
-                            Text("Level").padding(.trailing)
-                        }
-                    }
-        ) {
+        Section(header: VStack {
+            Text("Skills and Projects").font(customHeadline())
+            HStack {
+                Text("Cursus").padding(.leading)
+                Spacer()
+                Text("Level").padding(.trailing)
+            }
+        }) {
             let cursusUsers = user.cursus_users.filter { !$0.skills.isEmpty }
             if !cursusUsers.isEmpty {
                 ForEach(cursusUsers.sorted { $0.level > $1.level }) { cursusUser in
@@ -119,9 +124,9 @@ struct showSkillsAndProjects: View {
 
 struct InformationView_Previews: PreviewProvider {
     static var previews: some View {
-//        InformationView(login: "norminet", oauth2: .constant(OAuth2())).preferredColorScheme(.light)
-        InformationView(login: "dshults", oauth2: .constant(OAuth2())).preferredColorScheme(.light)
-//        InformationView(login: "test", oauth2: .constant(OAuth2())).preferredColorScheme(.light)
-//        InformationView(login: "nonuser", oauth2: .constant(OAuth2())).preferredColorScheme(.light)
+        let logins = ["norminet", "dshults", "test", "nonuser"]
+        ForEach(logins, id: \.self) { login in
+            InformationView(login: login, oauth2: .constant(OAuth2())).preferredColorScheme(.light)
+        }
     }
 }

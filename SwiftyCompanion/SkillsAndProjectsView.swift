@@ -67,8 +67,8 @@ struct SkillsAndProjectsView: View {
 struct SkillsAndProjectsView_Previews: PreviewProvider {
     static var previews: some View {
         let user = getTestUser(login: "dshults")!
-        SkillsAndProjectsView(cursusUser: user.cursus_users[0], projectUser: user.projects_users)
-        SkillsAndProjectsView(cursusUser: user.cursus_users[1], projectUser: user.projects_users)
-        SkillsAndProjectsView(cursusUser: user.cursus_users[2], projectUser: user.projects_users)
+        ForEach(0...user.cursus_users.count - 1, id: \.self) { n in
+            SkillsAndProjectsView(cursusUser: user.cursus_users[n], projectUser: user.projects_users)
+        }
     }
 }
