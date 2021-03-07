@@ -12,9 +12,25 @@ struct LoginView: View {
     @State private var login = ""
     @State private var isEditing = false
     @State private var oauth2 = OAuth2()
+    let title = "SwiftyCompanion"
 
     init(getToken: Bool = true) {
-        UINavigationBar.appearance().largeTitleTextAttributes = [.font : UIFont(name: "Arial Rounded MT Bold", size: 40)!]
+        var titleSize = CGFloat(40)
+        let titleFont = "Arial Rounded MT Bold"
+        let screenWidth = UIScreen.main.bounds.size.width
+
+        // MARK: - Shrink title if needed
+        func titleWidth() -> CGFloat {
+            return title.widthOfString(usingFont: UIFont(name: titleFont, size: titleSize)!)
+        }
+        while titleWidth() > screenWidth {
+            titleSize *= 0.9
+        }
+
+        // MARK: - Set title style and get API token if it's not a Preview
+        UINavigationBar.appearance().largeTitleTextAttributes = [
+            .font : UIFont(name: titleFont, size: titleSize)!
+        ]
         if getToken {
             self.oauth2.getToken()
         }
@@ -68,9 +84,18 @@ struct LoginView: View {
                 .padding(.top)
                 .disabled(login.isEmpty)
             }
-            .navigationBarTitle(Text("SwiftyCompanion"))
+            .navigationBarTitle(Text(title))
             .navigationBarHidden(isEditing)
         }
+    }
+}
+
+
+extension String {
+   func widthOfString(usingFont font: UIFont) -> CGFloat {
+        let fontAttributes = [NSAttributedString.Key.font: font]
+        let size = self.size(withAttributes: fontAttributes)
+        return size.width
     }
 }
 
