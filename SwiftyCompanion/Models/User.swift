@@ -10,6 +10,7 @@ import SwiftUI
 struct User: Codable {
     let login, email, image_url: String
     let pool_month, pool_year: String?
+    let correction_point: Int?
     let campus: [Campus]
     let cursus_users: [CursusUser]
     let projects_users: [ProjectsUser]

@@ -86,6 +86,11 @@ struct showDetails: View {
                 Spacer()
                 Text("\(user.pool_month ?? "") \(user.pool_year ?? "")")
             }
+            HStack {
+                Label("Evaluation points", systemImage: "bolt")
+                Spacer()
+                Text(String(user.correction_point ?? 0))
+            }
         }
         .font(.system(size: 18, design: .rounded))
     }
