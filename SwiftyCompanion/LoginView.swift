@@ -13,6 +13,7 @@ struct LoginView: View {
     @State private var isEditing = false
     @State private var oauth2 = OAuth2()
     let title = "SwiftyCompanion"
+    var imageOffset = CGFloat(-50)
 
     init(getToken: Bool = true) {
         var titleSize = CGFloat(40)
@@ -25,6 +26,7 @@ struct LoginView: View {
         }
         while titleWidth() > screenWidth {
             titleSize *= 0.9
+            imageOffset *= 0.7
         }
 
         // MARK: - Set title style and get API token if it's not a Preview
@@ -40,7 +42,7 @@ struct LoginView: View {
         NavigationView {
             VStack {
                 // MARK: - 42 image and welcome message
-                Image("logo_42").resizable().scaledToFill().frame(width: /*@START_MENU_TOKEN@*/150.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/150.0/*@END_MENU_TOKEN@*/).offset(y: -50)
+                Image("logo_42").resizable().scaledToFill().frame(width: /*@START_MENU_TOKEN@*/150.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/150.0/*@END_MENU_TOKEN@*/).offset(y: imageOffset)
                 VStack {
                     Text("Hi and welcome!")
                     Text("Please, enter a login to search")
