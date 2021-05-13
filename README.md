@@ -1,8 +1,13 @@
 # SwiftyCompanion
-Introduction to iOS development.
+#### Introduction to iOS development
+An app that lets you search for any login within École 42 and shows a basic profile information for it
 
-## Test 42 API V2
-Firts, get access to API by registering your app in intra -> settings -> register new app:
+![Image](https://user-images.githubusercontent.com/27923828/118106120-8d052100-b3dd-11eb-8fcf-68e08a7aa9d6.GIF)
+
+
+## Side note
+### How to test 42 API V2
+First, get access to API by registering your app in intra -> settings -> register new app:
 - Name: "SwiftyCompanion"
 - Redirect URI: http://localhost/callback
 
